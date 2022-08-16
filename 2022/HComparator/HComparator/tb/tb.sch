@@ -1,0 +1,152 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Simulation_SPICE:VDC V1
+U 1 1 632C29A6
+P 2000 4250
+F 0 "V1" H 2130 4341 50  0000 L CNN
+F 1 "VDC" H 2130 4250 50  0000 L CNN
+F 2 "" H 2000 4250 50  0001 C CNN
+F 3 "~" H 2000 4250 50  0001 C CNN
+F 4 "Y" H 2000 4250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2000 4250 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 5" H 2130 4159 50  0000 L CNN "Spice_Model"
+	1    2000 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VDC V2
+U 1 1 632C52D7
+P 2550 4250
+F 0 "V2" H 2680 4341 50  0000 L CNN
+F 1 "VDC" H 2680 4250 50  0000 L CNN
+F 2 "" H 2550 4250 50  0001 C CNN
+F 3 "~" H 2550 4250 50  0001 C CNN
+F 4 "Y" H 2550 4250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2550 4250 50  0001 L CNN "Spice_Primitive"
+F 6 "dc 2.25" H 2680 4159 50  0000 L CNN "Spice_Model"
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Simulation_SPICE:VPWL V3
+U 1 1 632C62B2
+P 3200 4250
+F 0 "V3" H 3330 4341 50  0000 L CNN
+F 1 "VPWL" H 3330 4250 50  0000 L CNN
+F 2 "" H 3200 4250 50  0001 C CNN
+F 3 "~" H 3200 4250 50  0001 C CNN
+F 4 "Y" H 3200 4250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 3200 4250 50  0001 L CNN "Spice_Primitive"
+F 6 "pwl(0 0 1000n 5 2500n 0)" H 3330 4159 50  0000 L CNN "Spice_Model"
+	1    3200 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_OR1Symbols:0 #GND01
+U 1 1 632C66D1
+P 3700 4900
+F 0 "#GND01" H 3700 4800 50  0001 C CNN
+F 1 "0" H 3600 4950 50  0000 C CNN
+F 2 "" H 3850 4900 50  0001 C CNN
+F 3 "" H 3850 4900 50  0001 C CNN
+	1    3700 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 4450 3200 4650
+Wire Wire Line
+	2000 4650 2000 4450
+Connection ~ 3200 4650
+Wire Wire Line
+	2000 4650 2550 4650
+Wire Wire Line
+	2550 4450 2550 4650
+Connection ~ 2550 4650
+Wire Wire Line
+	2550 4650 3200 4650
+Wire Wire Line
+	3700 4900 3700 4650
+Wire Wire Line
+	3700 4650 3200 4650
+Wire Wire Line
+	2000 3350 2000 4050
+Wire Wire Line
+	2550 4050 2550 3700
+Text Notes 2150 1800 0    50   ~ 0
+.include /home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/HComparator/tb/16PTS/mos_PTS06.lib
+Text Notes 2150 1950 0    50   ~ 0
+.tran 1ns 2500ns  0ns1000ns
+$Sheet
+S 4550 3000 2000 1750
+U 6330DAC6
+F0 "Sheet6330DAC5" 50
+F1 "../pre-amp.sch" 50
+F2 "VDD" I L 4550 3350 50 
+F3 "VSS" I L 4550 4650 50 
+F4 "VP" I L 4550 3700 50 
+F5 "Vout1" O R 6550 3550 50 
+F6 "Vout2" O R 6550 3750 50 
+F7 "VM" I L 4550 4050 50 
+$EndSheet
+Connection ~ 3700 4650
+Wire Wire Line
+	4550 4650 4300 4650
+Wire Wire Line
+	3200 4050 4550 4050
+Wire Wire Line
+	2550 3700 4550 3700
+Wire Wire Line
+	4550 3350 4300 3350
+$Sheet
+S 6900 3050 1550 1700
+U 631A3B07
+F0 "Sheet631A3B06" 50
+F1 "../judge.sch" 50
+F2 "VDD" I L 6900 3250 50 
+F3 "Vin1" I L 6900 3550 50 
+F4 "Vin2" I L 6900 3750 50 
+F5 "VSS" I L 6900 4150 50 
+F6 "Vout1" O R 8450 3550 50 
+F7 "Vout2" O R 8450 3800 50 
+$EndSheet
+Wire Wire Line
+	6550 3550 6900 3550
+Wire Wire Line
+	6550 3750 6900 3750
+Wire Wire Line
+	4300 3350 4300 2650
+Wire Wire Line
+	4300 2650 6750 2650
+Wire Wire Line
+	6750 2650 6750 3250
+Wire Wire Line
+	6750 3250 6900 3250
+Connection ~ 4300 3350
+Wire Wire Line
+	4300 3350 2000 3350
+Wire Wire Line
+	4300 4650 4300 5100
+Wire Wire Line
+	4300 5100 6750 5100
+Wire Wire Line
+	6750 5100 6750 4150
+Wire Wire Line
+	6750 4150 6900 4150
+Connection ~ 4300 4650
+Wire Wire Line
+	4300 4650 3700 4650
+$EndSCHEMATC
