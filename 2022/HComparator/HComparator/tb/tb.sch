@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title ""
 Date ""
 Rev ""
@@ -111,30 +111,10 @@ Wire Wire Line
 	2550 3700 4550 3700
 Wire Wire Line
 	4550 3350 4300 3350
-$Sheet
-S 6900 3050 1550 1700
-U 631A3B07
-F0 "Sheet631A3B06" 50
-F1 "../judge.sch" 50
-F2 "VDD" I L 6900 3250 50 
-F3 "Vin1" I L 6900 3550 50 
-F4 "Vin2" I L 6900 3750 50 
-F5 "VSS" I L 6900 4150 50 
-F6 "Vout1" O R 8450 3550 50 
-F7 "Vout2" O R 8450 3800 50 
-$EndSheet
-Wire Wire Line
-	6550 3550 6900 3550
-Wire Wire Line
-	6550 3750 6900 3750
 Wire Wire Line
 	4300 3350 4300 2650
 Wire Wire Line
-	4300 2650 6750 2650
-Wire Wire Line
 	6750 2650 6750 3250
-Wire Wire Line
-	6750 3250 6900 3250
 Connection ~ 4300 3350
 Wire Wire Line
 	4300 3350 2000 3350
@@ -143,10 +123,59 @@ Wire Wire Line
 Wire Wire Line
 	4300 5100 6750 5100
 Wire Wire Line
-	6750 5100 6750 4150
-Wire Wire Line
-	6750 4150 6900 4150
+	6750 5100 6750 4600
 Connection ~ 4300 4650
 Wire Wire Line
 	4300 4650 3700 4650
+Wire Wire Line
+	4300 2650 6750 2650
+Wire Wire Line
+	6750 5100 8700 5100
+Connection ~ 6750 5100
+Connection ~ 6750 2650
+Wire Wire Line
+	6750 2650 8700 2650
+$Sheet
+S 6850 3000 1600 1750
+U 62FFD228
+F0 "Sheet62FFD227" 50
+F1 "../judge.sch" 50
+F2 "VDD" I L 6850 3250 50 
+F3 "Vin1" I L 6850 3550 50 
+F4 "Vin2" I L 6850 3750 50 
+F5 "VSS" I L 6850 4600 50 
+F6 "Vout1" O R 8450 3550 50 
+F7 "Vout2" O R 8450 3750 50 
+$EndSheet
+Wire Wire Line
+	6850 4600 6750 4600
+Wire Wire Line
+	6550 3550 6850 3550
+Wire Wire Line
+	6550 3750 6850 3750
+Wire Wire Line
+	6750 3250 6850 3250
+Wire Wire Line
+	8700 2650 8700 3350
+Wire Wire Line
+	8700 3950 8700 5100
+$Sheet
+S 9100 3050 1550 1700
+U 63071FC2
+F0 "Sheet63071FC1" 50
+F1 "../output.sch" 50
+F2 "VDD" I L 9100 3350 50 
+F3 "Vin1" I L 9100 3550 50 
+F4 "Vin2" I L 9100 3750 50 
+F5 "Vss" I L 9100 3950 50 
+F6 "Vout" O R 10650 3650 50 
+$EndSheet
+Wire Wire Line
+	8700 3350 9100 3350
+Wire Wire Line
+	8450 3550 9100 3550
+Wire Wire Line
+	8450 3750 9100 3750
+Wire Wire Line
+	8700 3950 9100 3950
 $EndSCHEMATC

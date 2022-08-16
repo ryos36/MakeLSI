@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -13,263 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 10800 2950 2    50   Output ~ 0
-VO
-Wire Wire Line
-	10500 2950 10800 2950
-$Comp
-L 0_OR1Symbols:NMOS_OR1 M16
-U 1 1 630B9AF4
-P 8400 3300
-F 0 "M16" H 8356 3391 50  0000 R CNN
-F 1 "NMOS_OR1" H 8356 3300 50  0000 R CNN
-F 2 "" H 8400 3300 50  0001 C CNN
-F 3 "" H 8400 3300 50  0001 C CNN
-F 4 "M" H 8750 3100 50  0001 L CNN "Spice_Primitive"
-F 5 "NMOS_OR1 l=1u w=2u" H 8356 3209 50  0000 R CNN "Spice_Model"
-F 6 "Y" H 8750 3200 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    8400 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2600 8600 2600
-$Comp
-L 0_OR1Symbols:PMOS_OR1 M15
-U 1 1 630B9B04
-P 8400 2600
-F 0 "M15" H 8644 2691 50  0000 L CNN
-F 1 "PMOS_OR1" H 8644 2600 50  0000 L CNN
-F 2 "" H 8400 2600 50  0001 C CNN
-F 3 "" H 8400 2600 50  0001 C CNN
-F 4 "M" H 8750 2400 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=2u" H 8644 2509 50  0000 L CNN "Spice_Model"
-F 6 "Y" H 8750 2500 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    8400 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2750 8600 2850
-$Comp
-L 0_OR1Symbols:NMOS_OR1 M20
-U 1 1 6310B1EC
-P 9600 3300
-F 0 "M20" H 9556 3391 50  0000 R CNN
-F 1 "NMOS_OR1" H 9556 3300 50  0000 R CNN
-F 2 "" H 9600 3300 50  0001 C CNN
-F 3 "" H 9600 3300 50  0001 C CNN
-F 4 "M" H 9950 3100 50  0001 L CNN "Spice_Primitive"
-F 5 "NMOS_OR1 l=1u w=2u" H 9556 3209 50  0000 R CNN "Spice_Model"
-F 6 "Y" H 9950 3200 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    9600 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 2600 9800 2600
-$Comp
-L 0_OR1Symbols:PMOS_OR1 M19
-U 1 1 6310B1F7
-P 9600 2600
-F 0 "M19" H 9844 2691 50  0000 L CNN
-F 1 "PMOS_OR1" H 9844 2600 50  0000 L CNN
-F 2 "" H 9600 2600 50  0001 C CNN
-F 3 "" H 9600 2600 50  0001 C CNN
-F 4 "M" H 9950 2400 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=2u" H 9844 2509 50  0000 L CNN "Spice_Model"
-F 6 "Y" H 9950 2500 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    9600 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9800 2300 9800 2450
-Wire Wire Line
-	9800 2750 9800 2950
-Wire Wire Line
-	8400 3300 8250 3300
-Wire Wire Line
-	8250 3300 8250 2600
-Wire Wire Line
-	8250 2600 8400 2600
-Wire Wire Line
-	9600 2600 9500 2600
-Wire Wire Line
-	9500 3300 9600 3300
-Wire Wire Line
-	9300 2150 9150 2150
-$Comp
-L 0_OR1Symbols:PMOS_OR1 M17
-U 1 1 6313D643
-P 8950 2150
-F 0 "M17" H 9194 2241 50  0000 L CNN
-F 1 "PMOS_OR1" H 9194 2150 50  0000 L CNN
-F 2 "" H 8950 2150 50  0001 C CNN
-F 3 "" H 8950 2150 50  0001 C CNN
-F 4 "M" H 9300 1950 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=2u" H 9194 2059 50  0000 L CNN "Spice_Model"
-F 6 "Y" H 9300 2050 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    8950 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 1850 9150 2000
-Wire Wire Line
-	9300 1850 9300 2150
-Wire Wire Line
-	9150 1850 9300 1850
-Wire Wire Line
-	8600 2850 8900 2850
-Wire Wire Line
-	8900 2850 8900 2150
-Wire Wire Line
-	8900 2150 8950 2150
-Connection ~ 8600 2850
-Wire Wire Line
-	8600 2850 8600 3150
-Wire Wire Line
-	8750 1600 9150 1600
-Wire Wire Line
-	9150 2300 8600 2300
-Wire Wire Line
-	8600 2300 8600 2450
-Wire Wire Line
-	9150 2300 9800 2300
-Connection ~ 9150 2300
-$Comp
-L 0_OR1Symbols:NMOS_OR1 M18
-U 1 1 6317F9AD
-P 9050 4050
-F 0 "M18" H 9006 4141 50  0000 R CNN
-F 1 "NMOS_OR1" H 9006 4050 50  0000 R CNN
-F 2 "" H 9050 4050 50  0001 C CNN
-F 3 "" H 9050 4050 50  0001 C CNN
-F 4 "M" H 9400 3850 50  0001 L CNN "Spice_Primitive"
-F 5 "NMOS_OR1 l=1u w=2u" H 9006 3959 50  0000 R CNN "Spice_Model"
-F 6 "Y" H 9400 3950 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    9050 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 3450 8600 3550
-Wire Wire Line
-	9250 3550 9250 3900
-Wire Wire Line
-	9800 3550 9250 3550
-Wire Wire Line
-	9800 3450 9800 3550
-Connection ~ 9250 3550
-Wire Wire Line
-	8600 3550 9250 3550
-Wire Wire Line
-	8900 2850 8900 4050
-Wire Wire Line
-	8900 4050 9050 4050
-Connection ~ 8900 2850
-Wire Wire Line
-	9250 4200 9250 4300
-Wire Wire Line
-	9250 4050 9350 4050
-Wire Wire Line
-	9350 4050 9350 4300
-Wire Wire Line
-	9350 4300 9250 4300
-Connection ~ 9250 4300
-Wire Wire Line
-	9250 4300 9250 4800
-Wire Wire Line
-	9800 3300 9900 3300
-Wire Wire Line
-	9900 3300 9900 4800
-Wire Wire Line
-	9900 4800 9250 4800
-Connection ~ 9250 4800
-Wire Wire Line
-	9950 1600 9150 1600
-Connection ~ 9150 1600
-Wire Wire Line
-	8600 3300 8700 3300
-Wire Wire Line
-	8700 3300 8700 4800
-Wire Wire Line
-	8700 4800 9250 4800
-$Comp
-L 0_OR1Symbols:NMOS_OR1 M22
-U 1 1 631ECDAC
-P 10300 3300
-F 0 "M22" H 10256 3391 50  0000 R CNN
-F 1 "NMOS_OR1" H 10256 3300 50  0000 R CNN
-F 2 "" H 10300 3300 50  0001 C CNN
-F 3 "" H 10300 3300 50  0001 C CNN
-F 4 "M" H 10650 3100 50  0001 L CNN "Spice_Primitive"
-F 5 "NMOS_OR1 l=1u w=2u" H 10256 3209 50  0000 R CNN "Spice_Model"
-F 6 "Y" H 10650 3200 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    10300 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L 0_OR1Symbols:PMOS_OR1 M21
-U 1 1 631ECDB6
-P 10300 2600
-F 0 "M21" H 10544 2691 50  0000 L CNN
-F 1 "PMOS_OR1" H 10544 2600 50  0000 L CNN
-F 2 "" H 10300 2600 50  0001 C CNN
-F 3 "" H 10300 2600 50  0001 C CNN
-F 4 "M" H 10650 2400 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=17u" H 10544 2509 50  0000 L CNN "Spice_Model"
-F 6 "Y" H 10650 2500 50  0001 L CNN "Spice_Netlist_Enabled"
-	1    10300 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10500 2750 10500 2950
-Wire Wire Line
-	10500 3300 10600 3300
-Wire Wire Line
-	10300 2600 10200 2600
-Wire Wire Line
-	10200 3300 10300 3300
-Wire Wire Line
-	10200 3300 10200 2950
-Wire Wire Line
-	9800 2950 10200 2950
-Connection ~ 9800 2950
-Wire Wire Line
-	9800 2950 9800 3150
-Connection ~ 10200 2950
-Wire Wire Line
-	10200 2950 10200 2600
-Wire Wire Line
-	10500 1600 9950 1600
-Connection ~ 9950 1600
-Wire Wire Line
-	10600 2350 10500 2350
-Connection ~ 10500 2350
-Wire Wire Line
-	10500 2350 10500 2450
-Wire Wire Line
-	10600 3450 10500 3450
-Wire Wire Line
-	10600 3300 10600 3450
-Connection ~ 10500 3450
-Wire Wire Line
-	10500 4800 9900 4800
-Wire Wire Line
-	10500 3450 10500 4800
-Connection ~ 9900 4800
-Wire Wire Line
-	10600 2350 10600 2600
-Wire Wire Line
-	10600 2600 10500 2600
-Connection ~ 10500 2950
-Wire Wire Line
-	10500 2950 10500 3150
-Wire Wire Line
-	8750 1600 8750 2600
-Wire Wire Line
-	9150 1600 9150 1850
-Connection ~ 9150 1850
-Wire Wire Line
-	10500 1600 10500 2350
-Wire Wire Line
-	9950 1600 9950 2600
 Text HLabel 1700 1750 0    50   Input ~ 0
 VDD
 Text HLabel 1800 2650 0    50   Input ~ 0
@@ -283,8 +26,6 @@ Wire Wire Line
 Text HLabel 1700 3850 0    50   Input ~ 0
 VSS
 Wire Wire Line
-	9500 2600 9500 3300
-Wire Wire Line
 	4300 1750 4300 2350
 Wire Wire Line
 	4300 2350 4500 2350
@@ -294,7 +35,7 @@ $Sheet
 S 2550 2150 1350 1350
 U 62FBC077
 F0 "Pre-amplifier Stage" 50
-F1 "pre-amp.sch" 50
+F1 "../pre-amp.sch" 50
 F2 "VDD" I L 2550 2300 50 
 F3 "VSS" I L 2550 3300 50 
 F4 "VP" I L 2550 2650 50 
@@ -330,7 +71,7 @@ $Sheet
 S 4500 2150 1300 1350
 U 6319D1F0
 F0 "Judgement Stage" 50
-F1 "judge.sch" 50
+F1 "../judge.sch" 50
 F2 "VDD" I L 4500 2350 50 
 F3 "Vin1" I L 4500 2650 50 
 F4 "Vin2" I L 4500 2950 50 
@@ -338,4 +79,37 @@ F5 "VSS" I L 4500 3350 50
 F6 "Vout1" O R 5800 2650 50 
 F7 "Vout2" O R 5800 2950 50 
 $EndSheet
+Wire Wire Line
+	5800 2650 6050 2650
+Wire Wire Line
+	5800 2950 6050 2950
+Wire Wire Line
+	4300 1750 5900 1750
+Wire Wire Line
+	5900 1750 5900 2300
+Wire Wire Line
+	5900 2300 6050 2300
+Connection ~ 4300 1750
+Wire Wire Line
+	4350 3850 5950 3850
+Wire Wire Line
+	5950 3850 5950 3350
+Wire Wire Line
+	5950 3350 6050 3350
+Connection ~ 4350 3850
+$Sheet
+S 6050 2150 1400 1350
+U 62FB40F6
+F0 "Output Stage" 50
+F1 "../output.sch" 50
+F2 "VDD" I L 6050 2300 50 
+F3 "Vin1" I L 6050 2650 50 
+F4 "Vin2" I L 6050 2950 50 
+F5 "Vss" I L 6050 3350 50 
+F6 "Vout" O R 7450 2650 50 
+$EndSheet
+Text HLabel 7750 2650 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	7450 2650 7750 2650
 $EndSCHEMATC
