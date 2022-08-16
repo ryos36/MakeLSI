@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -57,29 +57,13 @@ F 6 "Y" H 5050 4250 50  0001 L CNN "Spice_Netlist_Enabled"
 	1    4700 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 2350 2650 2200
 Connection ~ 2650 2700
 Wire Wire Line
-	2650 5100 4650 5100
-Wire Wire Line
-	4900 4500 4900 4650
+	2650 5100 4550 5100
 Wire Wire Line
 	4900 4350 5050 4350
 Wire Wire Line
-	5050 4350 5050 4650
-Wire Wire Line
-	5050 4650 4900 4650
-Connection ~ 4900 4650
-Wire Wire Line
 	2650 2500 2850 2500
-Wire Wire Line
-	2850 2500 2850 2200
-Wire Wire Line
-	2850 2200 2650 2200
-Connection ~ 2650 2200
-Wire Wire Line
-	2650 2200 2650 1900
 Text HLabel 4300 1650 0    50   Input ~ 0
 VDD
 Text HLabel 4350 5300 0    50   Input ~ 0
@@ -90,14 +74,12 @@ Wire Wire Line
 	4650 1650 4650 1900
 Connection ~ 4650 1900
 Wire Wire Line
-	4650 1900 5500 1900
+	4650 1900 5350 1900
 Wire Wire Line
 	4350 5300 4650 5300
 Wire Wire Line
 	4650 5300 4650 5100
 Connection ~ 4650 5100
-Wire Wire Line
-	4650 5100 4900 5100
 $Comp
 L 0_OR1Symbols:NMOS_OR1 M2
 U 1 1 630288B8
@@ -116,13 +98,6 @@ F 6 "Y" H 3200 4250 50  0001 L CNN "Spice_Netlist_Enabled"
 	1    2850 4350
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 5100 2650 4700
-Wire Wire Line
-	2300 4700 2650 4700
-Connection ~ 2650 4700
-Wire Wire Line
-	2650 4700 2650 4500
 Wire Wire Line
 	5350 2500 5500 2500
 $Comp
@@ -144,22 +119,9 @@ F 6 "Y" H 6050 2400 50  0001 L CNN "Spice_Netlist_Enabled"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	5350 2200 5350 2500
-Wire Wire Line
-	5500 2200 5500 2350
-Wire Wire Line
-	5500 1900 5500 2200
-Connection ~ 5500 2200
-Wire Wire Line
-	5500 2200 5350 2200
-Wire Wire Line
 	5700 2500 5850 2500
 Wire Wire Line
 	2650 4350 2300 4350
-Wire Wire Line
-	2300 4350 2300 4700
-Wire Wire Line
-	4900 4650 4900 5100
 $Comp
 L 0_OR1Symbols:NMOS_OR1 M3
 U 1 1 630288CA
@@ -203,7 +165,7 @@ VP
 Wire Wire Line
 	3950 4050 4900 4050
 Wire Wire Line
-	3950 3900 5500 3900
+	3950 3900 4550 3900
 Wire Wire Line
 	4900 4050 4900 4200
 Connection ~ 4900 4050
@@ -211,15 +173,8 @@ Wire Wire Line
 	4900 4050 5500 4050
 Wire Wire Line
 	4150 3000 4300 3000
-Connection ~ 3950 2700
-Wire Wire Line
-	3750 2700 3950 2700
-Wire Wire Line
-	3750 3000 3750 2700
 Wire Wire Line
 	3950 3000 3750 3000
-Wire Wire Line
-	3950 2850 3950 2700
 $Comp
 L 0_OR1Symbols:PMOS_OR1 M4
 U 1 1 63028872
@@ -238,10 +193,6 @@ F 6 "Y" H 4500 2900 50  0001 L CNN "Spice_Netlist_Enabled"
 	1    4150 3000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2650 1900 3950 1900
-Wire Wire Line
-	3950 1900 3950 2700
 Connection ~ 3950 1900
 Wire Wire Line
 	3950 1900 4650 1900
@@ -291,4 +242,51 @@ Wire Wire Line
 	3550 3900 3750 3900
 Text HLabel 3550 3900 0    50   Input ~ 0
 VM
+Wire Wire Line
+	2650 1900 2650 2350
+Wire Wire Line
+	2850 2500 2850 1900
+Wire Wire Line
+	2650 1900 2850 1900
+Connection ~ 2850 1900
+Wire Wire Line
+	2850 1900 3750 1900
+Wire Wire Line
+	3950 1900 3950 2850
+Connection ~ 3750 1900
+Wire Wire Line
+	3750 1900 3950 1900
+Wire Wire Line
+	3750 1900 3750 3000
+Wire Wire Line
+	5500 1900 5500 2350
+Wire Wire Line
+	5350 2500 5350 1900
+Connection ~ 5350 1900
+Wire Wire Line
+	5350 1900 5500 1900
+Wire Wire Line
+	2650 5100 2300 5100
+Connection ~ 2650 5100
+Wire Wire Line
+	2300 4350 2300 5100
+Wire Wire Line
+	2650 4500 2650 5100
+Wire Wire Line
+	4650 5100 4900 5100
+Connection ~ 4900 5100
+Wire Wire Line
+	4900 5100 5050 5100
+Wire Wire Line
+	5050 4350 5050 5100
+Wire Wire Line
+	4900 4500 4900 5100
+Wire Wire Line
+	4550 3900 4550 5100
+Connection ~ 4550 3900
+Wire Wire Line
+	4550 3900 5500 3900
+Connection ~ 4550 5100
+Wire Wire Line
+	4550 5100 4650 5100
 $EndSCHEMATC

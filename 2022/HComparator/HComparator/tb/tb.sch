@@ -28,20 +28,6 @@ F 6 "dc 5" H 2130 4159 50  0000 L CNN "Spice_Model"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Simulation_SPICE:VDC V2
-U 1 1 632C52D7
-P 2550 4250
-F 0 "V2" H 2680 4341 50  0000 L CNN
-F 1 "VDC" H 2680 4250 50  0000 L CNN
-F 2 "" H 2550 4250 50  0001 C CNN
-F 3 "~" H 2550 4250 50  0001 C CNN
-F 4 "Y" H 2550 4250 50  0001 L CNN "Spice_Netlist_Enabled"
-F 5 "V" H 2550 4250 50  0001 L CNN "Spice_Primitive"
-F 6 "dc 2.25" H 2680 4159 50  0000 L CNN "Spice_Model"
-	1    2550 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Simulation_SPICE:VPWL V3
 U 1 1 632C62B2
 P 3200 4250
@@ -51,7 +37,7 @@ F 2 "" H 3200 4250 50  0001 C CNN
 F 3 "~" H 3200 4250 50  0001 C CNN
 F 4 "Y" H 3200 4250 50  0001 L CNN "Spice_Netlist_Enabled"
 F 5 "V" H 3200 4250 50  0001 L CNN "Spice_Primitive"
-F 6 "pwl(0 0 1000n 5 2500n 0)" H 3330 4159 50  0000 L CNN "Spice_Model"
+F 6 "pwl(0 0 1u 5 2.5u 0  2510n 4.0 2599n 4.0 2600n 1.6 2699n 1.6 2700n 4)" H 3350 4550 50  0000 L CNN "Spice_Model"
 	1    3200 4250
 	1    0    0    -1  
 $EndComp
@@ -89,7 +75,7 @@ Wire Wire Line
 Text Notes 2150 1800 0    50   ~ 0
 .include /home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/HComparator/tb/16PTS/mos_PTS06.lib
 Text Notes 2150 1950 0    50   ~ 0
-.tran 1ns 2500ns  0ns1000ns
+.tran 1ns 3000ns  0ns1000ns
 Connection ~ 3700 4650
 Wire Wire Line
 	4300 3350 4300 2650
@@ -178,4 +164,18 @@ F5 "Vout1" O R 6550 3550 50
 F6 "Vout2" O R 6550 3750 50 
 F7 "VM" I L 4550 4050 50 
 $EndSheet
+$Comp
+L Simulation_SPICE:VPWL V2
+U 1 1 62FD6CCD
+P 2550 4250
+F 0 "V2" H 2680 4341 50  0000 L CNN
+F 1 "VPWL" H 2680 4250 50  0000 L CNN
+F 2 "" H 2550 4250 50  0001 C CNN
+F 3 "~" H 2550 4250 50  0001 C CNN
+F 4 "Y" H 2550 4250 50  0001 L CNN "Spice_Netlist_Enabled"
+F 5 "V" H 2550 4250 50  0001 L CNN "Spice_Primitive"
+F 6 "pwl(0 0 100n 2.25 2500n 2.25 2510n 1.6 2600n 1.6 2601n 4.0 2700n 4.0 2701n 1.6 )" H 2680 4159 50  0000 L CNN "Spice_Model"
+	1    2550 4250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
