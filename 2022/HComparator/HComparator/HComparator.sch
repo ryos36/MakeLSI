@@ -35,7 +35,7 @@ $Sheet
 S 2550 2150 1350 1350
 U 62FBC077
 F0 "Pre-amplifier Stage" 50
-F1 "../pre-amp.sch" 50
+F1 "pre-amp.sch" 50
 F2 "VDD" I L 2550 2300 50 
 F3 "VSS" I L 2550 3300 50 
 F4 "VP" I L 2550 2650 50 
@@ -71,7 +71,7 @@ $Sheet
 S 4500 2150 1300 1350
 U 6319D1F0
 F0 "Judgement Stage" 50
-F1 "../judge.sch" 50
+F1 "judge.sch" 50
 F2 "VDD" I L 4500 2350 50 
 F3 "Vin1" I L 4500 2650 50 
 F4 "Vin2" I L 4500 2950 50 
@@ -101,7 +101,7 @@ $Sheet
 S 6050 2150 1400 1350
 U 62FB40F6
 F0 "Output Stage" 50
-F1 "../output.sch" 50
+F1 "output.sch" 50
 F2 "VDD" I L 6050 2300 50 
 F3 "Vin1" I L 6050 2650 50 
 F4 "Vin2" I L 6050 2950 50 

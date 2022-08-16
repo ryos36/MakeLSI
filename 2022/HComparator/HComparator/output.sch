@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -38,7 +38,7 @@ F 1 "PMOS_OR1" H 5844 2950 50  0000 L CNN
 F 2 "" H 5600 2950 50  0001 C CNN
 F 3 "" H 5600 2950 50  0001 C CNN
 F 4 "M" H 5950 2750 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=2u" H 5844 2859 50  0000 L CNN "Spice_Model"
+F 5 "PMOS_OR1 l=1u w=6u" H 5844 2859 50  0000 L CNN "Spice_Model"
 F 6 "Y" H 5950 2850 50  0001 L CNN "Spice_Netlist_Enabled"
 	1    5600 2950
 	1    0    0    -1  
@@ -242,7 +242,7 @@ F 1 "PMOS_OR1" H 7194 2950 50  0000 L CNN
 F 2 "" H 6950 2950 50  0001 C CNN
 F 3 "" H 6950 2950 50  0001 C CNN
 F 4 "M" H 7300 2750 50  0001 L CNN "Spice_Primitive"
-F 5 "PMOS_OR1 l=1u w=2u" H 7194 2859 50  0000 L CNN "Spice_Model"
+F 5 "PMOS_OR1 l=1u w=17u" H 7194 2859 50  0000 L CNN "Spice_Model"
 F 6 "Y" H 7300 2850 50  0001 L CNN "Spice_Netlist_Enabled"
 	1    6950 2950
 	1    0    0    -1  
