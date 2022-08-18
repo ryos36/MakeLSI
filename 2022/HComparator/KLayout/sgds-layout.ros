@@ -26,11 +26,6 @@ exec ros -Q -- $0 "$@"
             (let ((*xstandard-output* out-file)
                   (layout-lst (read in-file)))
 
-                      (print (eval `(make-fix-sgds "TOP" "lib/openrule1um.gds" ,layout-lst)))
-                      #+:old-style
-                      (print (eval `(make-sgds 
-                        (make-lib "LIB" '(:units "0.001" "1e-09")
-                            (make-str "my-comp" 
-                                (eval-layout ,layout-lst)))))))))))
+                      (print (eval `(make-fix-sgds "TOP" "lib/openrule1um.gds" ,layout-lst))))))))
 
     ;;; vim: set ft=lisp lisp:

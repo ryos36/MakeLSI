@@ -9,7 +9,7 @@
 (annot:enable-annot-syntax)
 
 (defparameter *layout-x* 2000)
-(defparameter *layout-x-delta* 2000)
+(defparameter *layout-x-delta* 12000)
 (defparameter *layout-y* 71500)
 (defparameter *layout-y-delta* -9000)
 (defparameter *layout-stack* nil)
@@ -35,7 +35,7 @@
         (setf first-flag nil)))
 
 	   `(let ((,ax-sym ,ax-sym))
-		  ,@new-lst)))
+		  ,@(nreverse new-lst))))
 
 (defmacro layout-h (&rest xlst)
 	`(make-layout *layout-x* *layout-x-delta* ,@xlst))
@@ -170,7 +170,7 @@
 (defmacro eval-layout (&rest body)
 	`(let ((*layout-stack* *layout-stack*))
 		,@body
-		*layout-stack*))
+        *layout-stack*))
 
 (defun make-fix-sgds (top-name rulelib &rest body)
     `(:SGDS
