@@ -1,4 +1,4 @@
-update=2022年08月16日 17時08分05秒
+update=2022年08月19日 11時43分16秒
 version=1
 last_client=kicad
 [general]

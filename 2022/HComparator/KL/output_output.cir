@@ -1,0 +1,31 @@
+* Created by KLayout
+
+* cell TOP
+* pin VDD
+* pin Vin1
+* pin Vout
+* pin Vin2
+* pin VSS
+.SUBCKT TOP 1 5 6 8 9
+* net 1 VDD
+* net 5 Vin1
+* net 6 Vout
+* net 8 Vin2
+* net 9 VSS
+* device instance $1 r0 *1 87,73.5 PMOS
+M$1 6 2 1 1 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $2 r0 *1 66.5,73.5 PMOS
+M$2 3 4 1 1 PMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $3 r0 *1 75,67.5 PMOS
+M$3 2 8 3 1 PMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $4 r0 *1 59,67.5 PMOS
+M$4 4 5 3 1 PMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $5 r0 *1 85,55 NMOS
+M$5 9 2 6 9 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $6 r0 *1 75,55 NMOS
+M$6 7 8 2 9 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $7 r0 *1 59,55 NMOS
+M$7 7 5 4 9 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $8 r0 *1 66.5,47 NMOS
+M$8 9 4 7 9 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS TOP
