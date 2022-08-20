@@ -1,5 +1,5 @@
 ---
 target: pre-amp-judge
 reference: lvs_work/pre-amp-judge_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/per-amp-judge/per-amp-judge.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/per-amp-judge/per-amp-judge.cir"
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/per-amp-judge/per-amp-judge.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/per-amp-judge/per-amp-judge.cir"
