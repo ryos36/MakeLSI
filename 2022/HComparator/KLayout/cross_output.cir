@@ -1,0 +1,15 @@
+* Created by KLayout
+
+* cell TOP
+* pin Vout
+* pin Vin
+* pin VSS
+.SUBCKT TOP 1 3 4
+* net 1 Vout
+* net 3 Vin
+* net 4 VSS
+* device instance $1 r0 *1 6,1 NMOS
+M$1 2 3 1 4 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $2 r0 *1 -3,1 NMOS
+M$2 2 1 3 4 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS TOP

@@ -1,0 +1,24 @@
+.title KiCad schematic
+M1 Net__M1_Pad1_ Net__M1_Pad1_ /VDD /VDD PMOS l=1u w=2u
+M2 Net__M1_Pad1_ Net__M1_Pad1_ /VSS /VSS NMOS l=1u w=2u
+M3 Net__M3_Pad1_ /VM Net__M3_Pad3_ /VSS NMOS l=1u w=2u
+M4 Net__M3_Pad1_ Net__M3_Pad1_ /VDD /VDD PMOS l=1u w=2u
+M5 Net__M3_Pad3_ Net__M1_Pad1_ /VSS /VSS NMOS l=1u w=2u
+M6 Net__M12_Pad2_ Net__M12_Pad2_ /VDD /VDD PMOS l=1u w=2u
+M7 Net__M12_Pad2_ /VP Net__M3_Pad3_ /VSS NMOS l=1u w=2u
+M8 /Vout2 /Vin2 /VDD /VDD PMOS l=1u w=2u
+M9 /Vout2 /Vout2 Net__M10_Pad1_ /VSS NMOS l=1u w=2u
+M10 Net__M10_Pad1_ Net__M10_Pad1_ /VSS /VSS NMOS l=1u w=2u
+M11 /Vout2 /Vout1 Net__M10_Pad1_ /VSS NMOS l=1u w=2u
+M12 /Vout1 /Vin1 /VDD /VDD PMOS l=1u w=2u
+M13 /Vout1 /Vout2 Net__M10_Pad1_ /VSS NMOS l=1u w=2u
+M14 /Vout1 /Vout1 Net__M10_Pad1_ /VSS NMOS l=1u w=2u
+M15 Net__M15_Pad1_ /Vin1 Net__M15_Pad3_ /VDD PMOS l=1u w=2u
+M16 Net__M15_Pad1_ /Vin1 Net__M16_Pad3_ /Vss NMOS l=1u w=2u
+M17 Net__M15_Pad3_ Net__M15_Pad1_ /VDD /VDD PMOS l=1u w=2u
+M18 Net__M16_Pad3_ Net__M15_Pad1_ /Vss /Vss NMOS l=1u w=2u
+M19 Net__M19_Pad1_ /Vin2 Net__M15_Pad3_ /VDD PMOS l=1u w=2u
+M20 Net__M19_Pad1_ /Vin2 Net__M16_Pad3_ /Vss NMOS l=1u w=2u
+M21 /Vout Net__M19_Pad1_ /VDD /VDD PMOS l=1u w=6u
+M22 /Vout Net__M19_Pad1_ /Vss /Vss NMOS l=1u w=2u
+.end

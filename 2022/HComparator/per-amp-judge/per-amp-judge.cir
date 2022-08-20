@@ -1,0 +1,16 @@
+.title KiCad schematic
+M1 Net-_M1-Pad1_ Net-_M1-Pad1_ /VDD /VDD PMOS_OR1 l=1u w=2u
+M5 Net-_M3-Pad3_ Net-_M1-Pad1_ /VSS /VSS NMOS_OR1 l=1u w=2u
+M2 Net-_M1-Pad1_ Net-_M1-Pad1_ /VSS /VSS NMOS_OR1 l=1u w=2u
+M6 /Vin1 /Vin1 /VDD /VDD PMOS_OR1 l=1u w=2u
+M3 /Vin2 NC_01 Net-_M3-Pad3_ /VSS NMOS_OR1 l=1u w=2u
+M7 /Vin1 NC_02 Net-_M3-Pad3_ /VSS NMOS_OR1 l=1u w=2u
+M4 /Vin2 /Vin2 /VDD /VDD PMOS_OR1 l=1u w=2u
+M14 /Vout3 /Vout3 Net-_M10-Pad1_ /VSS NMOS_OR1 l=1u w=2u
+M13 /Vout3 /Vout4 Net-_M10-Pad1_ /VSS NMOS_OR1 l=1u w=2u
+M10 Net-_M10-Pad1_ Net-_M10-Pad1_ /VSS /VSS NMOS_OR1 l=1u w=2u
+M11 /Vout4 /Vout3 Net-_M10-Pad1_ /VSS NMOS_OR1 l=1u w=2u
+M12 /Vout3 /Vin1 /VDD /VDD PMOS_OR1 l=1u w=2u
+M9 /Vout4 /Vout4 Net-_M10-Pad1_ /VSS NMOS_OR1 l=1u w=2u
+M8 /Vout4 /Vin2 /VDD /VDD PMOS_OR1 l=1u w=2u
+.end

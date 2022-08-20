@@ -1,0 +1,864 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	2050 2650 2050 3100
+Wire Wire Line
+	2050 3250 2650 3250
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 63016C45
+P 1850 3250
+AR Path="/632C252E/62FBC077/63016C45" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C45" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C45" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C45" Ref="M?"  Part="1" 
+AR Path="/63016C45" Ref="M3"  Part="1" 
+F 0 "M3" H 2094 3341 50  0000 L CNN
+F 1 "NMOS_OR1" H 2094 3250 50  0000 L CNN
+F 2 "" H 1850 3250 50  0001 C CNN
+F 3 "" H 1850 3250 50  0001 C CNN
+F 4 "M" H 2200 3050 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 2094 3159 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 2200 3150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    1850 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3400 3000 3400
+Wire Wire Line
+	2400 2650 2050 2650
+Wire Wire Line
+	3000 3700 3150 3700
+Wire Wire Line
+	3000 3400 3000 3550
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 63016C1A
+P 2800 3700
+AR Path="/632C252E/62FBC077/63016C1A" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C1A" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C1A" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C1A" Ref="M?"  Part="1" 
+AR Path="/63016C1A" Ref="M5"  Part="1" 
+F 0 "M5" H 3044 3791 50  0000 L CNN
+F 1 "NMOS_OR1" H 3044 3700 50  0000 L CNN
+F 2 "" H 2800 3700 50  0001 C CNN
+F 3 "" H 2800 3700 50  0001 C CNN
+F 4 "M" H 3150 3500 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 3044 3609 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 3150 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    2800 3700
+	1    0    0    -1  
+$EndComp
+Text HLabel 2450 4650 0    50   Input ~ 0
+VSS
+Wire Wire Line
+	2450 4650 2750 4650
+Wire Wire Line
+	2750 4650 2750 4450
+Wire Wire Line
+	3150 3700 3150 4450
+Wire Wire Line
+	2750 4450 3000 4450
+Wire Wire Line
+	3000 4450 3150 4450
+Connection ~ 3000 4450
+Wire Wire Line
+	3000 3850 3000 4450
+Wire Wire Line
+	2650 3250 2650 4450
+Connection ~ 2750 4450
+Wire Wire Line
+	2650 4450 2750 4450
+Connection ~ 2650 4450
+Text HLabel 1550 3250 0    50   Input ~ 0
+VM
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 63016C30
+P 950 3700
+AR Path="/632C252E/62FBC077/63016C30" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C30" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C30" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C30" Ref="M?"  Part="1" 
+AR Path="/63016C30" Ref="M2"  Part="1" 
+F 0 "M2" H 1194 3791 50  0000 L CNN
+F 1 "NMOS_OR1" H 600 3600 50  0000 L CNN
+F 2 "" H 950 3700 50  0001 C CNN
+F 3 "" H 950 3700 50  0001 C CNN
+F 4 "M" H 1300 3500 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 150 3500 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 1300 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    950  3700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	750  3700 400  3700
+Wire Wire Line
+	750  3250 750  3550
+Wire Wire Line
+	1200 3700 2800 3700
+Wire Wire Line
+	1200 3700 950  3700
+Connection ~ 1200 3700
+Wire Wire Line
+	1200 3250 1200 3700
+Wire Wire Line
+	750  3250 1200 3250
+Wire Wire Line
+	400  3700 400  4450
+Wire Wire Line
+	750  4450 2650 4450
+Wire Wire Line
+	750  4450 400  4450
+Connection ~ 750  4450
+Wire Wire Line
+	750  3850 750  4450
+Wire Wire Line
+	4400 3300 4400 3450
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6302C157
+P 4200 3150
+AR Path="/6319D1F0/6302C157" Ref="M?"  Part="1" 
+AR Path="/6302C157" Ref="M9"  Part="1" 
+F 0 "M9" H 4444 3241 50  0000 L CNN
+F 1 "NMOS_OR1" H 4444 3150 50  0000 L CNN
+F 2 "" H 4200 3150 50  0001 C CNN
+F 3 "" H 4200 3150 50  0001 C CNN
+F 4 "M" H 4550 2950 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 4444 3059 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 4550 3050 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    4200 3150
+	1    0    0    -1  
+$EndComp
+Text HLabel 3900 3500 2    50   Input ~ 0
+VP
+Wire Wire Line
+	6450 4450 7650 4450
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6304B294
+P 8550 2950
+AR Path="/62FB40F6/6304B294" Ref="M?"  Part="1" 
+AR Path="/6304B294" Ref="M20"  Part="1" 
+F 0 "M20" H 8506 3041 50  0000 R CNN
+F 1 "NMOS_OR1" H 8506 2950 50  0000 R CNN
+F 2 "" H 8550 2950 50  0001 C CNN
+F 3 "" H 8550 2950 50  0001 C CNN
+F 4 "M" H 8900 2750 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 8506 2859 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 8900 2850 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    8550 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2950 8550 2950
+Wire Wire Line
+	8750 3100 8750 3200
+Wire Wire Line
+	8750 2950 8850 2950
+Wire Wire Line
+	8850 2950 8850 4450
+Wire Wire Line
+	8450 2750 8450 2950
+Wire Wire Line
+	7650 2950 7650 4450
+Wire Wire Line
+	7550 2950 7650 2950
+Connection ~ 7650 4450
+Wire Wire Line
+	7650 4450 8200 4450
+Wire Wire Line
+	8200 3700 8300 3700
+Wire Wire Line
+	7850 3700 8000 3700
+Wire Wire Line
+	7550 3200 8200 3200
+Wire Wire Line
+	8750 3200 8200 3200
+Connection ~ 8200 3200
+Wire Wire Line
+	8200 3200 8200 3550
+Wire Wire Line
+	7550 3100 7550 3200
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6304B2C4
+P 8000 3700
+AR Path="/62FB40F6/6304B2C4" Ref="M?"  Part="1" 
+AR Path="/6304B2C4" Ref="M18"  Part="1" 
+F 0 "M18" H 7956 3791 50  0000 R CNN
+F 1 "NMOS_OR1" H 7956 3700 50  0000 R CNN
+F 2 "" H 8000 3700 50  0001 C CNN
+F 3 "" H 8000 3700 50  0001 C CNN
+F 4 "M" H 8350 3500 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 7956 3609 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 8350 3600 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    8000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2950 7200 2950
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6304B2CE
+P 7350 2950
+AR Path="/62FB40F6/6304B2CE" Ref="M?"  Part="1" 
+AR Path="/6304B2CE" Ref="M16"  Part="1" 
+F 0 "M16" H 7306 3041 50  0000 R CNN
+F 1 "NMOS_OR1" H 7306 2950 50  0000 R CNN
+F 2 "" H 7350 2950 50  0001 C CNN
+F 3 "" H 7350 2950 50  0001 C CNN
+F 4 "M" H 7700 2750 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 7306 2859 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 7700 2850 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    7350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6304B308
+P 9900 2950
+AR Path="/62FB40F6/6304B308" Ref="M?"  Part="1" 
+AR Path="/6304B308" Ref="M22"  Part="1" 
+F 0 "M22" H 9856 3041 50  0000 R CNN
+F 1 "NMOS_OR1" H 9856 2950 50  0000 R CNN
+F 2 "" H 9900 2950 50  0001 C CNN
+F 3 "" H 9900 2950 50  0001 C CNN
+F 4 "M" H 10250 2750 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 9856 2859 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 10250 2850 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    9900 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2950 9900 2950
+Wire Wire Line
+	8850 4450 8300 4450
+Wire Wire Line
+	10100 4450 8850 4450
+Connection ~ 8850 4450
+Wire Wire Line
+	10100 3100 10100 3350
+Wire Wire Line
+	10100 2950 10600 2950
+Wire Wire Line
+	10600 2950 10600 3350
+Wire Wire Line
+	10600 3350 10100 3350
+Connection ~ 10100 3350
+Wire Wire Line
+	10100 3350 10100 4450
+Wire Wire Line
+	8200 3850 8200 4450
+Wire Wire Line
+	8300 3700 8300 4450
+Connection ~ 8200 4450
+Connection ~ 8300 4450
+Wire Wire Line
+	8300 4450 8200 4450
+Wire Wire Line
+	7450 2750 8450 2750
+Wire Wire Line
+	4300 3250 3800 3250
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 63016C4F
+P 3800 3250
+AR Path="/632C252E/62FBC077/63016C4F" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C4F" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C4F" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C4F" Ref="M?"  Part="1" 
+AR Path="/63016C4F" Ref="M7"  Part="1" 
+F 0 "M7" H 3756 3341 50  0000 R CNN
+F 1 "NMOS_OR1" H 3756 3250 50  0000 R CNN
+F 2 "" H 3800 3250 50  0001 C CNN
+F 3 "" H 3800 3250 50  0001 C CNN
+F 4 "M" H 4150 3050 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 3756 3159 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 4150 3150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    3800 3250
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3000 3400
+Wire Wire Line
+	3000 3400 3600 3400
+Connection ~ 2650 3250
+Wire Wire Line
+	2650 3250 3600 3250
+Wire Wire Line
+	7050 2750 7050 3150
+Wire Wire Line
+	6750 2750 7050 2750
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 2750 6750 3000
+Wire Wire Line
+	3250 4450 4700 4450
+Connection ~ 4700 4450
+Wire Wire Line
+	4700 3150 4700 4450
+Wire Wire Line
+	4400 2750 4400 3000
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6302C135
+P 5200 3150
+AR Path="/6319D1F0/6302C135" Ref="M?"  Part="1" 
+AR Path="/6302C135" Ref="M11"  Part="1" 
+F 0 "M11" H 5444 3241 50  0000 L CNN
+F 1 "NMOS_OR1" H 5444 3150 50  0000 L CNN
+F 2 "" H 5200 3150 50  0001 C CNN
+F 3 "" H 5200 3150 50  0001 C CNN
+F 4 "M" H 5550 2950 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 5444 3059 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 5550 3050 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    5200 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3300 5000 3450
+Wire Wire Line
+	5200 3150 5400 3150
+Wire Wire Line
+	5000 2750 5000 3000
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6302C128
+P 5000 3900
+AR Path="/6319D1F0/6302C128" Ref="M?"  Part="1" 
+AR Path="/6302C128" Ref="M10"  Part="1" 
+F 0 "M10" H 5244 3991 50  0000 L CNN
+F 1 "NMOS_OR1" H 5244 3900 50  0000 L CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+F 4 "M" H 5350 3700 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 5244 3809 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 5350 3800 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 3900 5400 3900
+Wire Wire Line
+	5000 3900 4800 3900
+Wire Wire Line
+	4400 3150 4700 3150
+Connection ~ 4700 3150
+Wire Wire Line
+	4700 3150 5000 3150
+Wire Wire Line
+	4800 3900 4800 3650
+Wire Wire Line
+	4800 3650 5200 3650
+Wire Wire Line
+	5200 3650 5200 3750
+Wire Wire Line
+	5400 3900 5400 4450
+Connection ~ 5200 3650
+Wire Wire Line
+	5200 3450 5200 3650
+Wire Wire Line
+	4400 3450 5000 3450
+Connection ~ 5000 3450
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6302C10E
+P 5950 3150
+AR Path="/6319D1F0/6302C10E" Ref="M?"  Part="1" 
+AR Path="/6302C10E" Ref="M13"  Part="1" 
+F 0 "M13" H 6194 3241 50  0000 L CNN
+F 1 "NMOS_OR1" H 6194 3150 50  0000 L CNN
+F 2 "" H 5950 3150 50  0001 C CNN
+F 3 "" H 5950 3150 50  0001 C CNN
+F 4 "M" H 6300 2950 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 6194 3059 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 6300 3050 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    5950 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3300 6150 3450
+Wire Wire Line
+	5950 3150 5750 3150
+Wire Wire Line
+	6150 2750 6150 3000
+$Comp
+L 0_OR1Symbols:NMOS_OR1 M?
+U 1 1 6302C102
+P 6950 3150
+AR Path="/6319D1F0/6302C102" Ref="M?"  Part="1" 
+AR Path="/6302C102" Ref="M14"  Part="1" 
+F 0 "M14" H 7194 3241 50  0000 L CNN
+F 1 "NMOS_OR1" H 7194 3150 50  0000 L CNN
+F 2 "" H 6950 3150 50  0001 C CNN
+F 3 "" H 6950 3150 50  0001 C CNN
+F 4 "M" H 7300 2950 50  0001 L CNN "Spice_Primitive"
+F 5 "NMOS_OR1 l=1u w=2u" H 7194 3059 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 7300 3050 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    6950 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3300 6750 3450
+Wire Wire Line
+	6150 3150 6450 3150
+Wire Wire Line
+	6450 3150 6450 4450
+Connection ~ 6450 3150
+Wire Wire Line
+	6450 3150 6750 3150
+Wire Wire Line
+	5400 2750 5400 2850
+Wire Wire Line
+	5400 2850 5750 2850
+Wire Wire Line
+	5750 2850 5750 3150
+Wire Wire Line
+	4400 2750 5000 2750
+Wire Wire Line
+	5000 2750 5400 2750
+Connection ~ 5000 2750
+Wire Wire Line
+	5400 3150 5400 3000
+Wire Wire Line
+	5400 3000 5850 3000
+Wire Wire Line
+	5850 3000 5850 2750
+Wire Wire Line
+	6150 2750 6750 2750
+Wire Wire Line
+	5850 2750 6150 2750
+Connection ~ 6150 2750
+Wire Wire Line
+	6150 3450 6750 3450
+Connection ~ 6150 3450
+Wire Wire Line
+	5200 3450 5000 3450
+Wire Wire Line
+	6150 3450 5200 3450
+Connection ~ 5200 3450
+Wire Wire Line
+	6950 3150 7050 3150
+Connection ~ 6450 4450
+Connection ~ 5400 4450
+Wire Wire Line
+	5400 4450 6450 4450
+Connection ~ 4400 2750
+Wire Wire Line
+	4000 2750 4400 2750
+Wire Wire Line
+	4000 3150 4000 2750
+Wire Wire Line
+	4200 3150 4000 3150
+Wire Wire Line
+	4400 2600 4400 2750
+Wire Wire Line
+	7450 2600 7450 2750
+Wire Wire Line
+	4400 2600 7450 2600
+Wire Wire Line
+	7200 2500 7200 2950
+Wire Wire Line
+	6900 2500 7200 2500
+Wire Wire Line
+	6900 2250 6900 2500
+Wire Wire Line
+	6150 2250 6900 2250
+Connection ~ 5450 1250
+Wire Wire Line
+	5450 1250 7700 1250
+Wire Wire Line
+	8900 2250 8750 2250
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6304B29E
+P 8550 2250
+AR Path="/62FB40F6/6304B29E" Ref="M?"  Part="1" 
+AR Path="/6304B29E" Ref="M19"  Part="1" 
+F 0 "M19" H 8794 2341 50  0000 L CNN
+F 1 "PMOS_OR1" H 8794 2250 50  0000 L CNN
+F 2 "" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0001 C CNN
+F 4 "M" H 8900 2050 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=6u" H 8794 2159 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 8900 2150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    8550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 1950 8750 2100
+Wire Wire Line
+	8550 2250 8450 2250
+Wire Wire Line
+	8900 1250 8900 2250
+Connection ~ 8450 2750
+Wire Wire Line
+	8450 2250 8450 2750
+Wire Wire Line
+	7550 1950 7550 2100
+Wire Wire Line
+	7550 2500 7550 2800
+Wire Wire Line
+	7850 1800 7900 1800
+Wire Wire Line
+	7850 2500 7850 3700
+Wire Wire Line
+	7850 2500 7850 1800
+Connection ~ 7850 2500
+Wire Wire Line
+	7550 2500 7850 2500
+Wire Wire Line
+	8250 1500 8250 1800
+Wire Wire Line
+	8100 1950 8750 1950
+Wire Wire Line
+	8100 1950 7550 1950
+Connection ~ 8100 1950
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6304B2EE
+P 7900 1800
+AR Path="/62FB40F6/6304B2EE" Ref="M?"  Part="1" 
+AR Path="/6304B2EE" Ref="M17"  Part="1" 
+F 0 "M17" H 8144 1891 50  0000 L CNN
+F 1 "PMOS_OR1" H 8144 1800 50  0000 L CNN
+F 2 "" H 7900 1800 50  0001 C CNN
+F 3 "" H 7900 1800 50  0001 C CNN
+F 4 "M" H 8250 1600 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 8144 1709 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 8250 1700 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    7900 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 1800 8100 1800
+Wire Wire Line
+	7200 2250 7350 2250
+Connection ~ 7550 2500
+Wire Wire Line
+	7550 2400 7550 2500
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6304B2FD
+P 7350 2250
+AR Path="/62FB40F6/6304B2FD" Ref="M?"  Part="1" 
+AR Path="/6304B2FD" Ref="M15"  Part="1" 
+F 0 "M15" H 7594 2341 50  0000 L CNN
+F 1 "PMOS_OR1" H 7594 2250 50  0000 L CNN
+F 2 "" H 7350 2250 50  0001 C CNN
+F 3 "" H 7350 2250 50  0001 C CNN
+F 4 "M" H 7700 2050 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 7594 2159 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 7700 2150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    7350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 2250 7550 2250
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6304B311
+P 9900 2250
+AR Path="/62FB40F6/6304B311" Ref="M?"  Part="1" 
+AR Path="/6304B311" Ref="M21"  Part="1" 
+F 0 "M21" H 10144 2341 50  0000 L CNN
+F 1 "PMOS_OR1" H 10144 2250 50  0000 L CNN
+F 2 "" H 9900 2250 50  0001 C CNN
+F 3 "" H 9900 2250 50  0001 C CNN
+F 4 "M" H 10250 2050 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=17u" H 10144 2159 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 10250 2150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    9900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2250 9800 2250
+Wire Wire Line
+	8900 1250 10100 1250
+Wire Wire Line
+	10100 1250 10100 1950
+Wire Wire Line
+	10100 1950 10600 1950
+Wire Wire Line
+	10600 1950 10600 2250
+Wire Wire Line
+	10100 2250 10600 2250
+Connection ~ 10100 1950
+Wire Wire Line
+	10100 1950 10100 2100
+Text HLabel 11050 2550 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	9800 2250 9800 2550
+Wire Wire Line
+	9800 2550 9800 2950
+Connection ~ 9800 2550
+Wire Wire Line
+	8750 2400 8750 2550
+Wire Wire Line
+	8750 2550 8750 2800
+Connection ~ 8750 2550
+Wire Wire Line
+	8750 2550 9800 2550
+Wire Wire Line
+	10100 2400 10100 2550
+Wire Wire Line
+	10100 2550 11050 2550
+Connection ~ 10100 2550
+Wire Wire Line
+	10100 2550 10100 2800
+Connection ~ 7200 2500
+Wire Wire Line
+	7200 2250 7200 2500
+Wire Wire Line
+	8100 1500 8100 1650
+Wire Wire Line
+	8100 1500 8250 1500
+Wire Wire Line
+	7700 1250 7700 2250
+Connection ~ 7700 1250
+Wire Wire Line
+	7700 1250 8100 1250
+Connection ~ 8100 1500
+Wire Wire Line
+	8100 1250 8100 1500
+Connection ~ 8100 1250
+Connection ~ 8900 1250
+Wire Wire Line
+	8900 1250 8100 1250
+Connection ~ 4400 2600
+Wire Wire Line
+	4400 2400 4400 2600
+Wire Wire Line
+	3300 2250 3300 2350
+Wire Wire Line
+	4200 2250 3300 2250
+Wire Wire Line
+	6150 2250 6150 2750
+Connection ~ 6150 2250
+Wire Wire Line
+	5450 2250 6150 2250
+Wire Wire Line
+	5700 1850 5450 1850
+Wire Wire Line
+	5700 1550 5700 1850
+Wire Wire Line
+	5450 1250 5450 1550
+Wire Wire Line
+	5450 1550 5450 1700
+Connection ~ 5450 1550
+Wire Wire Line
+	5450 1550 5700 1550
+Wire Wire Line
+	5450 2000 5450 2250
+Wire Wire Line
+	5250 1850 5300 1850
+Connection ~ 5250 1850
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6302C147
+P 5250 1850
+AR Path="/6319D1F0/6302C147" Ref="M?"  Part="1" 
+AR Path="/6302C147" Ref="M12"  Part="1" 
+F 0 "M12" H 5494 1941 50  0000 L CNN
+F 1 "PMOS_OR1" H 5494 1850 50  0000 L CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "" H 5250 1850 50  0001 C CNN
+F 4 "M" H 5600 1650 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 5494 1759 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 5600 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    5250 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 1950 4400 2100
+Wire Wire Line
+	4650 2250 4400 2250
+Wire Wire Line
+	4650 1950 4650 2250
+Wire Wire Line
+	4400 1950 4650 1950
+Connection ~ 4400 1950
+Wire Wire Line
+	4400 1250 5450 1250
+Wire Wire Line
+	3600 1250 4400 1250
+Connection ~ 4400 1250
+Wire Wire Line
+	4400 1250 4400 1950
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 6302C160
+P 4200 2250
+AR Path="/6319D1F0/6302C160" Ref="M?"  Part="1" 
+AR Path="/6302C160" Ref="M8"  Part="1" 
+F 0 "M8" H 4444 2341 50  0000 L CNN
+F 1 "PMOS_OR1" H 4444 2250 50  0000 L CNN
+F 2 "" H 4200 2250 50  0001 C CNN
+F 3 "" H 4200 2250 50  0001 C CNN
+F 4 "M" H 4550 2050 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 4444 2159 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 4550 2150 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 63016C0D
+P 550 1850
+AR Path="/632C252E/62FBC077/63016C0D" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C0D" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C0D" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C0D" Ref="M?"  Part="1" 
+AR Path="/63016C0D" Ref="M1"  Part="1" 
+F 0 "M1" H 794 1941 50  0000 L CNN
+F 1 "PMOS_OR1" H 794 1850 50  0000 L CNN
+F 2 "" H 550 1850 50  0001 C CNN
+F 3 "" H 550 1850 50  0001 C CNN
+F 4 "M" H 900 1650 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 794 1759 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 900 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    550  1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  2000 750  2050
+Wire Wire Line
+	550  1850 450  1850
+Wire Wire Line
+	450  1850 450  2050
+Wire Wire Line
+	450  2050 750  2050
+Wire Wire Line
+	750  1850 950  1850
+Text HLabel 2400 1000 0    50   Input ~ 0
+VDD
+Wire Wire Line
+	2400 1000 2750 1000
+Wire Wire Line
+	2750 1000 2750 1250
+Connection ~ 2750 1250
+Wire Wire Line
+	2750 1250 3450 1250
+Wire Wire Line
+	3450 1850 3600 1850
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 63016C3A
+P 3800 1850
+AR Path="/632C252E/62FBC077/63016C3A" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C3A" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C3A" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C3A" Ref="M?"  Part="1" 
+AR Path="/63016C3A" Ref="M6"  Part="1" 
+F 0 "M6" H 4044 1941 50  0000 L CNN
+F 1 "PMOS_OR1" H 4044 1850 50  0000 L CNN
+F 2 "" H 3800 1850 50  0001 C CNN
+F 3 "" H 3800 1850 50  0001 C CNN
+F 4 "M" H 4150 1650 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 4044 1759 50  0000 L CNN "Spice_Model"
+F 6 "Y" H 4150 1750 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    3800 1850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2350 1850 2350
+$Comp
+L 0_OR1Symbols:PMOS_OR1 M?
+U 1 1 63016C60
+P 2250 2350
+AR Path="/632C252E/62FBC077/63016C60" Ref="M?"  Part="1" 
+AR Path="/6330DAC6/63016C60" Ref="M?"  Part="1" 
+AR Path="/62FBC077/63016C60" Ref="M?"  Part="1" 
+AR Path="/630748E5/62FBC077/63016C60" Ref="M?"  Part="1" 
+AR Path="/63016C60" Ref="M4"  Part="1" 
+F 0 "M4" H 2206 2441 50  0000 R CNN
+F 1 "PMOS_OR1" H 2206 2350 50  0000 R CNN
+F 2 "" H 2250 2350 50  0001 C CNN
+F 3 "" H 2250 2350 50  0001 C CNN
+F 4 "M" H 2600 2150 50  0001 L CNN "Spice_Primitive"
+F 5 "PMOS_OR1 l=1u w=2u" H 2206 2259 50  0000 R CNN "Spice_Model"
+F 6 "Y" H 2600 2250 50  0001 L CNN "Spice_Netlist_Enabled"
+	1    2250 2350
+	-1   0    0    -1  
+$EndComp
+Connection ~ 2050 2650
+Wire Wire Line
+	2050 2500 2050 2650
+Wire Wire Line
+	3300 2350 2400 2350
+Wire Wire Line
+	2250 2350 2400 2350
+Connection ~ 2400 2350
+Wire Wire Line
+	2400 2350 2400 2650
+Wire Wire Line
+	3600 2000 3600 2150
+Wire Wire Line
+	3600 2150 3950 2150
+Wire Wire Line
+	3950 1850 5250 1850
+Wire Wire Line
+	3800 1850 3950 1850
+Connection ~ 3950 1850
+Wire Wire Line
+	3950 2150 3950 1850
+Connection ~ 3600 2150
+Wire Wire Line
+	3600 2150 3600 3100
+Connection ~ 750  3250
+Connection ~ 750  2050
+Wire Wire Line
+	750  2050 750  3250
+Wire Wire Line
+	750  1250 750  1700
+Wire Wire Line
+	950  1850 950  1250
+Wire Wire Line
+	750  1250 950  1250
+Connection ~ 950  1250
+Wire Wire Line
+	2050 1250 2750 1250
+Connection ~ 2050 1250
+Wire Wire Line
+	2050 1250 2050 2200
+Wire Wire Line
+	950  1250 1850 1250
+Wire Wire Line
+	1850 1250 2050 1250
+Connection ~ 1850 1250
+Wire Wire Line
+	1850 1250 1850 2350
+Wire Wire Line
+	3600 1250 3600 1700
+Wire Wire Line
+	3450 1850 3450 1250
+Connection ~ 3600 1250
+Connection ~ 3450 1250
+Wire Wire Line
+	3450 1250 3600 1250
+Wire Wire Line
+	1550 3250 1850 3250
+Wire Wire Line
+	5400 4450 5200 4450
+Wire Wire Line
+	4700 4450 5200 4450
+Connection ~ 5200 4450
+Wire Wire Line
+	5200 4050 5200 4450
+$EndSCHEMATC

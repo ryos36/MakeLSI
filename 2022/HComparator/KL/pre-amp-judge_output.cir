@@ -1,16 +1,20 @@
 * Created by KLayout
 
 * cell TOP
-* pin Vout2
-* pin Vout1
+* pin Vin2,Vout2
+* pin Vin1,Vout1
+* pin Vout4
+* pin Vout3
 * pin VM
-* pin VDD,VP
+* pin VDD
 * pin VSS
-.SUBCKT TOP 6 7 8 10 11
-* net 6 Vout2
-* net 7 Vout1
+.SUBCKT TOP 4 5 6 7 8 10 11
+* net 4 Vin2,Vout2
+* net 5 Vin1,Vout1
+* net 6 Vout4
+* net 7 Vout3
 * net 8 VM
-* net 10 VDD,VP
+* net 10 VDD
 * net 11 VSS
 * device instance $1 r0 *1 39,73.5 PMOS
 M$1 7 5 10 10 PMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
