@@ -1,4 +1,0 @@
-.title KiCad schematic
-M11 /Vin /Vout Net-_M11-Pad3_ /VSS NMOS l=1u w=2u
-M13 /Vout /Vin Net-_M11-Pad3_ /VSS NMOS l=1u w=2u
-.end
