@@ -73,7 +73,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 4050 2550 3700
 Text Notes 2150 1800 0    50   ~ 0
-.include /home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/HComparator/tb/16PTS/mos_PTS06.lib
+.include /home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/KiCad/tb/16PTS/mos_PTS06.lib
 Text Notes 2150 1950 0    50   ~ 0
 .tran 1ns 3000ns  0ns1000ns
 Connection ~ 3700 4650

@@ -1,5 +1,5 @@
 ---
 target: output
 reference: lvs_work/output_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/KL/output.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/KL/output.cir"
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/output/output.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/output/output.cir"
