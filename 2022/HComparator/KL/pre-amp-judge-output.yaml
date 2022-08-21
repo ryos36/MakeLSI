@@ -1,5 +1,0 @@
----
-target: pre-amp-judge-output
-reference: lvs_work/pre-amp-judge-output_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/KiCad_all_In_One/HComparator.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2022/HComparator/KiCad_all_In_One/HComparator.cir"

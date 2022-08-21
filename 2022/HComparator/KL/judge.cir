@@ -1,9 +1,0 @@
-.title KiCad schematic
-M8 Net-_M11-Pad1_ Net-_M3-Pad1_ /VDD /VDD PMOS l=1u w=2u
-M9 Net-_M11-Pad1_ Net-_M11-Pad1_ Net-_M10-Pad1_ Net-_M10-Pad3_ NMOS l=1u w=2u
-M10 Net-_M10-Pad1_ Net-_M10-Pad1_ /VSS Net-_M10-Pad4_ NMOS_OR1 l=1u w=2u
-M11 Net-_M11-Pad1_ Net-_M11-Pad2_ Net-_M10-Pad1_ Net-_M10-Pad3_ NMOS l=1u w=2u
-M12 Net-_M11-Pad2_ Net-_M12-Pad2_ /VDD /VDD PMOS l=1u w=2u
-M13 Net-_M11-Pad2_ Net-_M11-Pad1_ Net-_M10-Pad1_ Net-_M10-Pad3_ NMOS l=1u w=2u
-M14 Net-_M11-Pad2_ Net-_M11-Pad2_ Net-_M10-Pad1_ Net-_M10-Pad3_ NMOS l=1u w=2u
-.end

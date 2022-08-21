@@ -1,5 +1,0 @@
----
-target: judge
-reference: lvs_work/judge_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/judge/judge.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/judge/judge.cir"
