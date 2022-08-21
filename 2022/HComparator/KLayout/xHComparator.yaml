@@ -1,5 +1,0 @@
----
-target: xHComparator
-reference: lvs_work/xHComparator_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/KLayout/HComparator.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/KLayout/HComparator.cir"

@@ -1,5 +1,0 @@
----
-target: cross
-reference: lvs_work/cross_reference.cir.txt
-netlist: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/cross/cross.cir"
-schematic: "/home/ryos/Project/MakeLSI/MakeLSI/2022/HComparator/cross/cross.cir"
