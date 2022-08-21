@@ -1,0 +1,4 @@
+dac.nsl - おそらく清水先生が書いた DAC
+dac.ap
+xorshift.gds - Python でかいた xorshift の乱数。でかすぎてお蔵入り
+xorshift8.gds - Python でかいた xorshift の乱数。でかすぎてお蔵入り
