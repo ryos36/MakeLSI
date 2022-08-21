@@ -1,0 +1,7 @@
+measurement condition
+Frequency Value [Hz] : 1000000
+Imp Type : CSRS
+AC Voltage Level [V] : 0.020000
+DC Start Voltage [V] : -10.000000
+DC Voltage Step [V] : 0.100000
+DC Stop Voltage [V] : 5.000000

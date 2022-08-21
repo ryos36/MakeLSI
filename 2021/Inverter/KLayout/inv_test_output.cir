@@ -1,0 +1,13 @@
+* Created by KLayout
+
+* cell int_test
+* pin VDD
+* pin VSS
+.SUBCKT int_test 2 4
+* net 2 VDD
+* net 4 VSS
+* device instance $1 r0 *1 -1.5,1.5 PMOS
+M$1 2 1 3 2 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $2 r0 *1 -1.5,-8 NMOS
+M$2 4 1 3 4 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS int_test

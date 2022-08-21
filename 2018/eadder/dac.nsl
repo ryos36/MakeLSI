@@ -1,0 +1,40 @@
+#define PRES	8
+#define IPRES	12
+
+declare dac {
+	input Vq[PRES];
+	output Vout;
+	func_in set_Vq(Vq);
+}
+
+declare add%IPRES% {
+	input a[IPRES], b[IPRES];
+	output f[IPRES];
+	func_in exe(a,b):f;
+	output co;
+}
+
+module add%IPRES% {
+	wire tmp[IPRES+1];
+	func exe {
+		tmp=(IPRES+1)'a+(IPRES+1)'b;
+		f=tmp[(IPRES-1):0];
+		co=tmp[IPRES];
+	}
+}
+
+module dac {
+	reg Vx[IPRES] = 1<<(IPRES-1);
+	reg rVq[PRES] = 0;
+	reg flag = 0;
+	add%IPRES% adder;
+
+
+	func set_Vq {
+		rVq := Vq;
+	}
+
+	Vx := adder.exe(Vx, {(IPRES-PRES)#flag, rVq});
+	flag := adder.f[IPRES-1];
+	Vout = flag;
+}

@@ -1,0 +1,9 @@
+なにをやったか？
+Polyphony -> Verilog -> VHDL.
+
+https://scrapbox.io/makelsi/Alliance%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E8%AB%96%E7%90%86%E5%9B%9E%E8%B7%AF%E8%A8%AD%E8%A8%88_-ALU%E7%B7%A8-
+をみながら、
+ap というファイルを作って(何のファイルかはなぞ。仮想配置配線データ？)
+さらに s2r で gds(この場合file.gds) が出来る。
+で、それを glade で確認した。
+
