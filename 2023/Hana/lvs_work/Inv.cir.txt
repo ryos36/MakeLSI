@@ -1,0 +1,6 @@
+.title KiCad schematic
+SUBCKT INV X A VDD VSS
+M1 /X /A /VDD /VDD PMOS_OR1 l=1u w=6u
+M2 /X /A /VSS /VSS NMOS_OR1 l=1u w=2u
+.ENDS
+.end

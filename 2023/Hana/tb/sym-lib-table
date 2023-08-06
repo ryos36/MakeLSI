@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OR1Symbols")(type "Legacy")(uri "/Users/hana/MakeLSI/OpenRule1um/KiCad/OR1Symbols.lib")(options "")(descr ""))
+)

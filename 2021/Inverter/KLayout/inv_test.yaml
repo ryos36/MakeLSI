@@ -1,5 +1,5 @@
 ---
 target: inv_test
-reference: inv_test_reference.cir
-netlist: C:/cygwin64/home/ryos/Project/MakeLSI/Inverter/Inverter.cir
-schematic: C:/cygwin64/home/ryos/Project/MakeLSI/Inverter/Inverter.cir
+reference: lvs_work/inv_test_reference.cir.txt
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2021/Inverter/KiCad/Inverter.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2021/Inverter/KiCad/Inverter.cir"

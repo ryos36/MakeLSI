@@ -1,0 +1,15 @@
+* Created by KLayout
+
+* cell TOP
+* pin A
+* pin X
+* pin VSS
+.SUBCKT TOP 1 2 4
+* net 1 A
+* net 2 X
+* net 4 VSS
+* device instance $1 r0 *1 -0.5,1 PMOS
+M$1 3 1 2 3 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $2 r0 *1 -0.5,-8.5 NMOS
+M$2 4 1 2 4 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS TOP

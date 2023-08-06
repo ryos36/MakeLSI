@@ -1,0 +1,5 @@
+---
+target: inv
+reference: lvs_work/inv_reference.cir.txt
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/Hana/Inv/Inv.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/Hana/Inv/Inv.cir"
