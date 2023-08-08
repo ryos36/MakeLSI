@@ -247,7 +247,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Inv.kicad_pro",
+    "filename": "cc_osc.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -311,7 +311,15 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "Spice Model",
+    "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": "cc_osc.wbk"
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -324,7 +332,7 @@
   },
   "sheets": [
     [
-      "93c2b51c-1652-4ac9-a74a-86ae16dc71b7",
+      "4dd73f04-d100-4345-9232-75650c920c70",
       ""
     ]
   ],

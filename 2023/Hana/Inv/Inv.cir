@@ -1,6 +1,13 @@
-.title KiCad schematic
-SUBCKT INV X A VDD VSS
-M1 /X /A /VDD /VDD PMOS_OR1 l=1u w=6u
-M2 /X /A /VSS /VSS NMOS_OR1 l=1u w=2u
-.ENDS
-.end
+* Created by KLayout
+
+* .XSUBCKT TOP
+.subckt Top VDD VSS X A
++       A ; input
++       VDD ; input
++       VSS ; input
++       X ; output
+*M$1 VDD A X VDD PMOS l=1U w=6U 
+*M$2 VSS A X VSS NMOS l=1U w=2U
+M1 X A VDD VDD PMOS l=1u w=6u
+M2 X A VSS VSS NMOS l=1u w=2u
+.ENDS TOP
