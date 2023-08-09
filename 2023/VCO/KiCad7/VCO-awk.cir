@@ -7,31 +7,31 @@
 +       VSS ; input
 
 
-M35 Net-_M33-D_ Net-_M33-D_ VDD VDD PMOS l=1u w=6u
 M34 Net-_M33-S_ IN VSS VSS NMOS l=1u w=2u
+M35 Net-_M33-D_ Net-_M33-D_ VDD VDD PMOS l=1u w=6u
+M31 Net-_M31-D_ OUT Net-_M28-S_ VSS NMOS l=1u w=2u
 M32 Net-_M31-D_ Net-_M28-D_ VDD VDD PMOS l=1u w=6u
 M33 Net-_M33-D_ Net-_M28-D_ Net-_M33-S_ VSS NMOS l=1u w=2u
-M27 IN IN VSS VSS NMOS l=1u w=2u
-M37 Net-_M36-D_ Net-_M33-D_ VDD VDD PMOS l=1u w=6u
-M36 Net-_M36-D_ Net-_M31-D_ Net-_M33-S_ VSS NMOS l=1u w=2u
-M31 Net-_M31-D_ OUT Net-_M28-S_ VSS NMOS l=1u w=2u
 M28 Net-_M28-D_ Net-_M28-G_ Net-_M28-S_ VSS NMOS l=1u w=2u
 M30 Net-_M28-D_ Net-_M28-D_ VDD VDD PMOS l=1u w=6u
 M29 Net-_M28-S_ IN VSS VSS NMOS l=1u w=2u
+M40 Net-_M38-D_ Net-_M38-D_ VDD VDD PMOS l=1u w=6u
+M39 Net-_M38-S_ IN VSS VSS NMOS l=1u w=2u
+M38 Net-_M38-D_ Net-_M33-D_ Net-_M38-S_ VSS NMOS l=1u w=2u
+M36 Net-_M36-D_ Net-_M31-D_ Net-_M33-S_ VSS NMOS l=1u w=2u
+M37 Net-_M36-D_ Net-_M33-D_ VDD VDD PMOS l=1u w=6u
+M27 IN IN VSS VSS NMOS l=1u w=2u
+M42 Net-_M41-D_ Net-_M38-D_ VDD VDD PMOS l=1u w=6u
+M41 Net-_M41-D_ Net-_M36-D_ Net-_M38-S_ VSS NMOS l=1u w=2u
+M47 Net-_M46-D_ Net-_M43-D_ VDD VDD PMOS l=1u w=6u
+M45 Net-_M43-D_ Net-_M43-D_ VDD VDD PMOS l=1u w=6u
+M48 Net-_M28-G_ Net-_M43-D_ Net-_M48-S_ VSS NMOS l=1u w=2u
 M52 OUT Net-_M28-G_ VDD VDD PMOS l=1u w=6u
 M50 Net-_M28-G_ Net-_M28-G_ VDD VDD PMOS l=1u w=6u
-M48 Net-_M28-G_ Net-_M43-D_ Net-_M48-S_ VSS NMOS l=1u w=2u
-M49 Net-_M48-S_ IN VSS VSS NMOS l=1u w=2u
 M51 OUT Net-_M46-D_ Net-_M48-S_ VSS NMOS l=1u w=2u
-M40 Net-_M38-D_ Net-_M38-D_ VDD VDD PMOS l=1u w=6u
-M38 Net-_M38-D_ Net-_M33-D_ Net-_M38-S_ VSS NMOS l=1u w=2u
-M41 Net-_M41-D_ Net-_M36-D_ Net-_M38-S_ VSS NMOS l=1u w=2u
-M42 Net-_M41-D_ Net-_M38-D_ VDD VDD PMOS l=1u w=6u
-M39 Net-_M38-S_ IN VSS VSS NMOS l=1u w=2u
 M43 Net-_M43-D_ Net-_M38-D_ Net-_M43-S_ VSS NMOS l=1u w=2u
 M46 Net-_M46-D_ Net-_M41-D_ Net-_M43-S_ VSS NMOS l=1u w=2u
 M44 Net-_M43-S_ IN VSS VSS NMOS l=1u w=2u
-M47 Net-_M46-D_ Net-_M43-D_ VDD VDD PMOS l=1u w=6u
-M45 Net-_M43-D_ Net-_M43-D_ VDD VDD PMOS l=1u w=6u
+M49 Net-_M48-S_ IN VSS VSS NMOS l=1u w=2u
 
 .ends
