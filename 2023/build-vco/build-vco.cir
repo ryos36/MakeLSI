@@ -6,7 +6,7 @@
 +       VSS ; input
 
 
-M1 IN IN VDD VDD PMOS_OR1 l=1u w=6u
 M27 IN IN VSS VSS NMOS_OR1 l=1u w=2u
+M1 IN IN VDD VDD PMOS_OR1 l=1u w=6u
 
 .ends
