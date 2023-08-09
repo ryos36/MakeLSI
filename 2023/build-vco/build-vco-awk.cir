@@ -7,6 +7,7 @@
 
 
 M27 IN IN VSS VSS NMOS l=1u w=2u
+M2 IN IN VSS VSS NMOS l=1u w=2u
 M1 IN IN VDD VDD PMOS l=1u w=6u
 
 .ends
