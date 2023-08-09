@@ -8,10 +8,11 @@
 
 
 M2 Net-_M2-D_ IN VSS VSS NMOS_OR1 l=1u w=2u
-M27 IN IN VSS VSS NMOS_OR1 l=1u w=2u
-M1 Net-_M1-D_ Net-_M1-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M7 Net-_M3-D_ IN VSS VSS NMOS_OR1 l=1u w=2u
 M3 Net-_M3-D_ Net-_M1-D_ VDD VDD PMOS_OR1 l=1u w=6u
 M5 Net-_M3-D_ OUT Net-_M2-D_ VSS NMOS_OR1 l=1u w=2u
 M4 Net-_M1-D_ OUT Net-_M2-D_ VSS NMOS_OR1 l=1u w=2u
+M1 Net-_M1-D_ Net-_M1-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M27 IN IN VSS VSS NMOS_OR1 l=1u w=2u
 
 .ends
