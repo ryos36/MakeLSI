@@ -1,7 +1,6 @@
 *
 
 .subckt Top
-+       FB ; input
 +       IN ; input
 +       OUT ; output
 +       VDD ; input
@@ -10,9 +9,9 @@
 
 M2 Net-_M2-D_ IN VSS VSS NMOS l=1u w=2u
 M27 IN IN VSS VSS NMOS l=1u w=2u
-M1 OUT OUT VDD VDD PMOS l=1u w=6u
-M3 OUT OUT VDD VDD PMOS l=1u w=6u
-M4 OUT FB Net-_M2-D_ VSS NMOS l=1u w=2u
-M5 OUT FB Net-_M2-D_ VSS NMOS l=1u w=2u
+M1 Net-_M1-D_ Net-_M1-D_ VDD VDD PMOS l=1u w=6u
+M4 Net-_M1-D_ OUT Net-_M2-D_ VSS NMOS l=1u w=2u
+M3 Net-_M1-D_ Net-_M1-D_ VDD VDD PMOS l=1u w=6u
+M5 Net-_M1-D_ OUT Net-_M2-D_ VSS NMOS l=1u w=2u
 
 .ends
