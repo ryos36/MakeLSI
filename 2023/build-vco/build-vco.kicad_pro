@@ -247,7 +247,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "cc_osc.kicad_pro",
+    "filename": "build-vco.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -311,15 +311,7 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "Spice Model",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 0,
-      "workbook_filename": "cc_osc.wbk"
-    },
+    "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -332,16 +324,8 @@
   },
   "sheets": [
     [
-      "4dd73f04-d100-4345-9232-75650c920c70",
+      "178e7a69-f569-4b69-ab89-e6b9cdb6309f",
       ""
-    ],
-    [
-      "0aefe694-0879-49ae-bbe5-c256d7eb9cf0",
-      "cc_ocs_top"
-    ],
-    [
-      "ac695ace-99c3-4b31-820b-76427c769f34",
-      "vco0"
     ]
   ],
   "text_variables": {}

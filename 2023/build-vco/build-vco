@@ -1,0 +1,10 @@
+*
+
+.subckt build-vco
++       IN ; input
++       VSS ; input
+
+
+M27 IN IN VSS VSS NMOS_OR1 l=1u w=2u
+
+.ends
