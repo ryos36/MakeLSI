@@ -8,21 +8,26 @@
 +       VSS ; input
 
 
+M7 Net-_M10-S_ IN VSS VSS NMOS l=1u w=2u
+M11 Net-_M11-D_ IN VSS VSS NMOS l=1u w=2u
 M4 Net-_M1-D_ FB Net-_M2-D_ VSS NMOS l=1u w=2u
 M1 Net-_M1-D_ Net-_M1-D_ VDD VDD PMOS l=1u w=6u
 M5 Net-_M10-G_ OUT Net-_M2-D_ VSS NMOS l=1u w=2u
 M3 Net-_M10-G_ Net-_M1-D_ VDD VDD PMOS l=1u w=6u
-M7 Net-_M10-S_ IN VSS VSS NMOS l=1u w=2u
 M2 Net-_M2-D_ IN VSS VSS NMOS l=1u w=2u
 M6 Net-_M12-G_ Net-_M1-D_ Net-_M10-S_ VSS NMOS l=1u w=2u
 M9 Net-_M10-D_ Net-_M12-G_ VDD VDD PMOS l=1u w=6u
 M8 Net-_M12-G_ Net-_M12-G_ VDD VDD PMOS l=1u w=6u
 M27 IN IN VSS VSS NMOS l=1u w=2u
-M11 Net-_M11-D_ IN VSS VSS NMOS l=1u w=2u
+M15 Net-_M14-D_ Net-_M10-D_ Net-_M11-D_ VSS NMOS l=1u w=2u
+M16 Net-_M16-D_ Net-_M12-D_ Net-_M16-S_ VSS NMOS l=1u w=2u
+M17 Net-_M16-D_ Net-_M16-D_ VDD VDD PMOS l=1u w=6u
+M19 Net-_M19-D_ Net-_M16-D_ VDD VDD PMOS l=1u w=6u
+M20 Net-_M19-D_ Net-_M14-D_ Net-_M16-S_ VSS NMOS l=1u w=2u
 M10 Net-_M10-D_ Net-_M10-G_ Net-_M10-S_ VSS NMOS l=1u w=2u
 M12 Net-_M12-D_ Net-_M12-G_ Net-_M11-D_ VSS NMOS l=1u w=2u
-M15 Net-_M14-D_ Net-_M10-D_ Net-_M11-D_ VSS NMOS l=1u w=2u
 M14 Net-_M14-D_ Net-_M12-D_ VDD VDD PMOS l=1u w=6u
 M13 Net-_M12-D_ Net-_M12-D_ VDD VDD PMOS l=1u w=6u
+M18 Net-_M16-S_ IN VSS VSS NMOS l=1u w=2u
 
 .ends
