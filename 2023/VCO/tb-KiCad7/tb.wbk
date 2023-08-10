@@ -1,10 +1,16 @@
 version 2
 1
 9
-.tran 1ns 3000ns{return}{return}{return}{return}.kicad adjustpaths{return}.save all{return}.probe alli
-2
+.tran 1ns 3000ns 2000ns{return}.kicad adjustpaths{return}.save all{return}.probe alli
+4
 1
-V(/VCO/IN)
+V(/Vout)
+ 
+1
+V(/buf/OUT)
+ 
+1
+V(Net-_M13-D_)
  
 1
 V(VCO_OUT)

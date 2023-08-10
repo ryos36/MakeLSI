@@ -1,0 +1,47 @@
+*
+
+.subckt VCO_buf
++       VCO_IN ; input
++       buf_OUT ; output
++       VCO_OUT ; output
++       VCO_VDD ; input
++       VSS ; input
++       VCO_VSS ; input
+
+
+M1 VCO_IN VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M6 Net-_M10-G_ Net-_M2-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M9 Net-_M11-G_ Net-_M11-G_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M12 Net-_M12-D_ Net-_M11-G_ Net-_M12-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M11 Net-_M10-D_ Net-_M11-G_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M14 Net-_M12-D_ Net-_M12-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M13 Net-_M12-S_ VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M5 Net-_M10-G_ VCO_OUT Net-_M2-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M2 Net-_M2-D_ Net-_M2-G_ Net-_M2-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M4 Net-_M2-D_ Net-_M2-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M3 Net-_M2-S_ VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M10 Net-_M10-D_ Net-_M10-G_ Net-_M10-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M7 Net-_M11-G_ Net-_M2-D_ Net-_M10-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M8 Net-_M10-S_ VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M18 Net-_M17-S_ VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M17 Net-_M17-D_ Net-_M12-D_ Net-_M17-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M16 Net-_M15-D_ Net-_M12-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M23 Net-_M22-S_ VCO_IN VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M22 Net-_M2-G_ Net-_M17-D_ Net-_M22-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M25 VCO_OUT Net-_M20-D_ Net-_M22-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M26 VCO_OUT Net-_M2-G_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M24 Net-_M2-G_ Net-_M2-G_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M15 Net-_M15-D_ Net-_M10-D_ Net-_M12-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M19 Net-_M17-D_ Net-_M17-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M21 Net-_M20-D_ Net-_M17-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M20 Net-_M20-D_ Net-_M15-D_ Net-_M17-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M33 buf_OUT Net-_M31-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=6u
+M31 Net-_M31-D_ Net-_M31-G_ Net-_M27-S_ VCO_VDD PMOS_OR1 l=1u w=2u
+M34 buf_OUT Net-_M31-D_ VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M27 Net-_M27-D_ VCO_OUT Net-_M27-S_ VCO_VDD PMOS_OR1 l=1u w=2u
+M29 Net-_M27-S_ Net-_M27-D_ VCO_VDD VCO_VDD PMOS_OR1 l=1u w=2u
+M28 Net-_M27-D_ VCO_OUT Net-_M28-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+M30 Net-_M28-S_ Net-_M27-D_ VCO_VSS VCO_VSS NMOS_OR1 l=1u w=2u
+M32 Net-_M31-D_ Net-_M31-G_ Net-_M28-S_ VCO_VSS NMOS_OR1 l=1u w=2u
+
+.ends
