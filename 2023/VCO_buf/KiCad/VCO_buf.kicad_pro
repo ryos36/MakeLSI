@@ -311,7 +311,15 @@
     "meta": {
       "version": 1
     },
-    "net_format_name": "",
+    "net_format_name": "Spice Model",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 0,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -324,16 +332,16 @@
   },
   "sheets": [
     [
-      "82d6b33d-4ce4-429b-8579-115833898db6",
-      ""
-    ],
-    [
       "a7cc0e5d-5f3f-483e-ac51-0ce4a6b4111e",
       "VCO"
     ],
     [
       "5eb4b771-1445-4f8f-ac24-be81e943d8ac",
       "buf"
+    ],
+    [
+      "82d6b33d-4ce4-429b-8579-115833898db6",
+      ""
     ]
   ],
   "text_variables": {}
