@@ -338,6 +338,10 @@
     [
       "6bf267ad-352c-4bed-8dae-b8be113dd87e",
       "VCO"
+    ],
+    [
+      "cd017e8e-cc43-44ad-b3a5-fc45475567ad",
+      "buf"
     ]
   ],
   "text_variables": {}

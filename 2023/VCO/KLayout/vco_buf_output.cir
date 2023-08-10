@@ -1,0 +1,65 @@
+* Created by KLayout
+
+* cell TOP
+* pin IN
+* pin OUT
+* pin VDD
+* pin VSS
+.SUBCKT TOP 1 7 17 18
+* net 1 IN
+* net 7 OUT
+* net 17 VDD
+* net 18 VSS
+* device instance $1 r0 *1 80,27 PMOS
+M$1 17 16 7 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $2 r0 *1 19.5,27 PMOS
+M$2 17 14 8 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $3 r0 *1 -1.5,27 PMOS
+M$3 17 12 13 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $4 r0 *1 59,18 PMOS
+M$4 17 15 15 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $5 r0 *1 59.5,27 PMOS
+M$5 17 15 11 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $6 r0 *1 39,18 PMOS
+M$6 17 9 9 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $7 r0 *1 79.5,18 PMOS
+M$7 17 16 16 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $8 r0 *1 19,18 PMOS
+M$8 17 14 14 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $9 r0 *1 39.5,27 PMOS
+M$9 17 9 10 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $10 r0 *1 -2,18 PMOS
+M$10 17 12 12 17 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $11 r0 *1 77.5,5.5 NMOS
+M$11 6 15 16 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $12 r0 *1 -12,-4 NMOS
+M$12 18 1 1 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $13 r0 *1 63,5.5 NMOS
+M$13 5 10 11 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $14 r0 *1 23,5.5 NMOS
+M$14 3 13 8 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $15 r0 *1 -4,-4 NMOS
+M$15 18 1 2 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $16 r0 *1 37,-4 NMOS
+M$16 18 1 4 18 NMOS L=1U W=2U AS=4P AD=6P PS=8U PD=10U
+* device instance $17 r0 *1 17,-4 NMOS
+M$17 18 1 3 18 NMOS L=1U W=2U AS=4P AD=6P PS=8U PD=10U
+* device instance $18 r0 *1 77.5,-4 NMOS
+M$18 18 1 6 18 NMOS L=1U W=2U AS=4P AD=6P PS=8U PD=10U
+* device instance $19 r0 *1 17,5.5 NMOS
+M$19 3 12 14 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $20 r0 *1 83.5,5.5 NMOS
+M$20 6 11 7 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $21 r0 *1 57,-4 NMOS
+M$21 18 1 5 18 NMOS L=1U W=2U AS=4P AD=6P PS=8U PD=10U
+* device instance $22 r0 *1 -4,5.5 NMOS
+M$22 2 16 12 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $23 r0 *1 2.5,5.5 NMOS
+M$23 2 7 13 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $24 r0 *1 37,5.5 NMOS
+M$24 4 14 9 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $25 r0 *1 43,5.5 NMOS
+M$25 4 8 10 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $26 r0 *1 57,5.5 NMOS
+M$26 5 9 15 18 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS TOP
