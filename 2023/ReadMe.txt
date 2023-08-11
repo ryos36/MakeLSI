@@ -9,6 +9,7 @@ tb_7osc
     これがうまくいったので MakeLSI: へ提出
 Inverter
     毎年作るインバータ
+    
 VCO
     VCO を作ったつもりで実は CCO だった
     ディレクトリ名等は間違ったまま
@@ -29,8 +30,23 @@ build-vco
     涙ぐましい CCO の KiCad 回路図の構築記録。git を追うと
     どのように回路を成長させていったか時間経過とともにわかる。
     12 時間かかっている、、、
-cc_osc
-cc_osc_klayout
-tb_vco_k7
-vco0
+    ディレクトリ名等は間違ったまま
+
 vco_k7
+    金沢大学の資料を参考にして作った VCO の KiCad 回路図。
+    これは本当に VCO なのだが。
+    動かなかった。
+
+tb_vco_k7
+    vco_k7 用の TB
+
+-- 以下削除予定
+vco0
+    VCO を作ったつもりで実は CCO だった
+    整理前のディレクトリ。VCO にコピーしたからいらねんじゃね？
+cc_osc
+    CCO の最初の KiCad 回路図。最初は cc にしてたのにね。
+    コピーしたからいらないと思う。
+cc_osc_klayout
+    cc_osc の klayout。B の付け方もひどかったし、
+    今見ると全然違っている。

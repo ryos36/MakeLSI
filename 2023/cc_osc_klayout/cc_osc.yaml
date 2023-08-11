@@ -1,0 +1,5 @@
+---
+target: cc_osc
+reference: lvs_work/cc_osc_reference.cir.txt
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/VCO/KiCad7/VCO.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/VCO/KiCad7/VCO.cir"

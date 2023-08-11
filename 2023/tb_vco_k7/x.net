@@ -1,0 +1,43 @@
+save all
+.probe alli
+.include /home/ryos/Project/MakeLSI/MakeLSI.git/2023/16PTS/mos_PTS06.lib
+
+V2 /VCO/In 0 DC 4.9 
+V1 /VCO/VDD 0 DC 5 
+M29 Net-_M28-D_ Net-_M26-D_ 0 0 NMOS_OR1 l=1u w=2u
+M27 Net-_M26-D_ Net-_M24-D_ 0 0 NMOS_OR1 l=1u w=2u
+M25 Net-_M24-D_ X 0 0 NMOS_OR1 l=1u w=2u
+M24 Net-_M24-D_ X /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M26 Net-_M26-D_ Net-_M24-D_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M28 Net-_M28-D_ Net-_M26-D_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M31 Net-_M30-D_ Net-_M28-D_ 0 0 NMOS_OR1 l=1u w=2u
+M32 X Net-_M30-D_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M33 X Net-_M30-D_ 0 0 NMOS_OR1 l=1u w=2u
+M30 Net-_M30-D_ Net-_M28-D_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M4 Net-_M1-S_ Net-_M4-G_ /VCO/VDD Net-_M4-B_ PMOS_OR1 l=1u w=6u
+M5 Net-_M4-G_ Net-_M4-G_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M6 Net-_M4-G_ Net-_M4-G_ Net-_M6-S_ 0 NMOS_OR1 l=1u w=2u
+M8 Net-_M8-D_ Net-_M4-B_ /VCO/VDD Net-_M12-G_ PMOS_OR1 l=1u w=6u
+M9 Net-_M10-D_ Net-_M1-D_ Net-_M8-D_ /VCO/VDD PMOS_OR1 l=1u w=6u
+M1 Net-_M1-D_ /VCO/OUT0 Net-_M1-S_ /VCO/VDD PMOS_OR1 l=1u w=6u
+M16 Net-_M16-D_ Net-_M12-B_ /VCO/VDD Net-_M16-B_ PMOS_OR1 l=1u w=6u
+M12 Net-_M12-D_ Net-_M12-G_ /VCO/VDD Net-_M12-B_ PMOS_OR1 l=1u w=6u
+M13 Net-_M13-D_ Net-_M10-D_ Net-_M12-D_ /VCO/VDD PMOS_OR1 l=1u w=6u
+M17 Net-_M17-D_ Net-_M13-D_ Net-_M16-D_ /VCO/VDD PMOS_OR1 l=1u w=6u
+M2 Net-_M1-D_ /VCO/OUT0 Net-_M2-S_ 0 NMOS_OR1 l=1u w=2u
+M3 Net-_M2-S_ Net-_M3-G_ 0 Net-_M11-G_ NMOS_OR1 l=1u w=2u
+M7 Net-_M6-S_ /VCO/In 0 Net-_M3-G_ NMOS_OR1 l=1u w=2u
+M22 /VCO/OUT0 Net-_M17-D_ Net-_M22-S_ 0 NMOS_OR1 l=1u w=2u
+M23 Net-_M22-S_ Net-_M19-B_ 0 0 NMOS_OR1 l=1u w=2u
+M19 Net-_M18-S_ Net-_M15-B_ 0 Net-_M19-B_ NMOS_OR1 l=1u w=2u
+M18 Net-_M17-D_ Net-_M13-D_ Net-_M18-S_ 0 NMOS_OR1 l=1u w=2u
+M10 Net-_M10-D_ Net-_M1-D_ Net-_M10-S_ 0 NMOS_OR1 l=1u w=2u
+M11 Net-_M10-S_ Net-_M11-G_ 0 Net-_M11-B_ NMOS_OR1 l=1u w=2u
+M14 Net-_M13-D_ Net-_M10-D_ Net-_M14-S_ 0 NMOS_OR1 l=1u w=2u
+M15 Net-_M14-S_ Net-_M11-B_ 0 Net-_M15-B_ NMOS_OR1 l=1u w=2u
+M20 Net-_M20-D_ Net-_M16-B_ /VCO/VDD /VCO/VDD PMOS_OR1 l=1u w=6u
+M21 /VCO/OUT0 Net-_M17-D_ Net-_M20-D_ /VCO/VDD PMOS_OR1 l=1u w=6u
+
+.tran 1n 10ns 0ns
+.ic V(X)=0.5
+.end

@@ -1,0 +1,22 @@
+* CMOS Inverter ver.1
+* designed by Hoge Hoge,
+* 1/1/2000
+
+.include './mos_PTS06.lib'
+
+**** Netlist ****
+VDD   1 0 DC 3.3V
+VX    3 0 DC 0V
+VCM1  5 0 DC 0V
+VCM2  1 2 DC 0V
+M1    4 3 5 5 NMOS_OR1 
++L=0.5u W=1.0u AD=1.5p AS=1.5p
+M2    4 3 2 2 PMOS_OR1 
++L=0.5u W=2.5u AD=3.75p AS=3.75p
+CL    4 0 10fF
+
+**** Simulation ****
+.OP
+.OPTION LIST POST NODE
+.TEMP 25
+.END

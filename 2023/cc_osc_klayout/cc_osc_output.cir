@@ -1,0 +1,45 @@
+* Created by KLayout
+
+* cell TOP
+* pin OUT
+* pin VDD
+* pin IN,VSS
+.SUBCKT TOP 10 11 12
+* net 10 OUT
+* net 11 VDD
+* net 12 IN,VSS
+* device instance $1 r0 *1 27,31 PMOS
+M$1 11 12 8 11 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $2 r0 *1 57,31 PMOS
+M$2 11 12 10 11 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $3 r0 *1 12,31 PMOS
+M$3 11 12 7 11 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $4 r0 *1 57,20.5 PMOS
+M$4 11 12 12 11 PMOS L=1U W=30U AS=75P AD=75P PS=85U PD=85U
+* device instance $6 r0 *1 42,31 PMOS
+M$6 11 12 9 11 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $7 r0 *1 -3,31 PMOS
+M$7 11 12 6 11 PMOS L=1U W=6U AS=15P AD=15P PS=17U PD=17U
+* device instance $11 r0 *1 61,8 NMOS
+M$11 5 12 10 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $12 r0 *1 55,8 NMOS
+M$12 5 12 12 12 NMOS L=1U W=4U AS=10P AD=10P PS=18U PD=18U
+* device instance $13 r0 *1 -13.5,-1 NMOS
+M$13 12 12 12 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $14 r0 *1 -5,-1 NMOS
+M$14 12 12 1 12 NMOS L=1U W=4U AS=10P AD=10P PS=18U PD=18U
+* device instance $15 r0 *1 25,-1 NMOS
+M$15 12 12 3 12 NMOS L=1U W=4U AS=10P AD=10P PS=18U PD=18U
+* device instance $16 r0 *1 40,-1 NMOS
+M$16 12 12 4 12 NMOS L=1U W=4U AS=10P AD=10P PS=18U PD=18U
+* device instance $17 r0 *1 46,8 NMOS
+M$17 4 12 9 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $18 r0 *1 10,8 NMOS
+M$18 2 12 12 12 NMOS L=1U W=4U AS=10P AD=10P PS=18U PD=18U
+* device instance $21 r0 *1 1,8 NMOS
+M$21 1 12 6 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $23 r0 *1 16,8 NMOS
+M$23 2 12 7 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+* device instance $26 r0 *1 31,8 NMOS
+M$26 3 12 8 12 NMOS L=1U W=2U AS=5P AD=5P PS=9U PD=9U
+.ENDS TOP
