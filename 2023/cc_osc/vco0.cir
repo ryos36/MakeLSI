@@ -1,8 +1,0 @@
-*
-
-.subckt Top
-
-
-M1 VSS IN IN VSS NMOS l=1u w=2u
-
-.ends

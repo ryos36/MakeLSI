@@ -1,3 +1,8 @@
 *.log
 *.sch-bak
 top_OR1.gds
+*backups
+lvs_work
+16PTS
+Yamada
+hcom.png
