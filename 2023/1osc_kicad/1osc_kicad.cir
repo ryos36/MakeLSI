@@ -1,0 +1,4 @@
+.title KiCad schematic
+M2 /OUT /OUT /VSS /VSS NMOS_OR1 l=1u w=2u
+M1 /OUT /OUT /VDD /VDD PMOS_OR1 l=1u w=6u
+.end

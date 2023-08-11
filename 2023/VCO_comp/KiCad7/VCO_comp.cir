@@ -1,0 +1,56 @@
+*
+
+.subckt VCO_comp
++       IN ; input
++       OUT ; output
++       judge_out1 ; output
++       judge_out2 ; output
++       VCO_OUT ; output
++       VCO_OUT_prev ; output
++       VDD ; input
++       VSS ; input
+
+
+M27 IN IN VSS VSS NMOS_OR1 l=1u w=2u
+M30 Net-_M28-D_ Net-_M28-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M35 Net-_M33-D_ Net-_M33-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M32 Net-_M31-D_ Net-_M28-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M37 Net-_M36-D_ Net-_M33-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M34 Net-_M33-S_ IN VSS VSS NMOS_OR1 l=1u w=2u
+M36 Net-_M36-D_ Net-_M31-D_ Net-_M33-S_ VSS NMOS_OR1 l=1u w=2u
+M33 Net-_M33-D_ Net-_M28-D_ Net-_M33-S_ VSS NMOS_OR1 l=1u w=2u
+M31 Net-_M31-D_ VCO_OUT Net-_M28-S_ VSS NMOS_OR1 l=1u w=2u
+M28 Net-_M28-D_ Net-_M28-G_ Net-_M28-S_ VSS NMOS_OR1 l=1u w=2u
+M29 Net-_M28-S_ IN VSS VSS NMOS_OR1 l=1u w=2u
+M38 Net-_M38-D_ Net-_M33-D_ Net-_M38-S_ VSS NMOS_OR1 l=1u w=2u
+M41 Net-_M41-D_ Net-_M36-D_ Net-_M38-S_ VSS NMOS_OR1 l=1u w=2u
+M43 Net-_M43-D_ Net-_M38-D_ Net-_M43-S_ VSS NMOS_OR1 l=1u w=2u
+M39 Net-_M38-S_ IN VSS VSS NMOS_OR1 l=1u w=2u
+M49 Net-_M48-S_ IN VSS VSS NMOS_OR1 l=1u w=2u
+M47 VCO_OUT_prev Net-_M43-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M45 Net-_M43-D_ Net-_M43-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M44 Net-_M43-S_ IN VSS VSS NMOS_OR1 l=1u w=2u
+M46 VCO_OUT_prev Net-_M41-D_ Net-_M43-S_ VSS NMOS_OR1 l=1u w=2u
+M40 Net-_M38-D_ Net-_M38-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M42 Net-_M41-D_ Net-_M38-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M50 Net-_M28-G_ Net-_M28-G_ VDD VDD PMOS_OR1 l=1u w=6u
+M52 VCO_OUT Net-_M28-G_ VDD VDD PMOS_OR1 l=1u w=6u
+M48 Net-_M28-G_ Net-_M43-D_ Net-_M48-S_ VSS NMOS_OR1 l=1u w=2u
+M51 VCO_OUT VCO_OUT_prev Net-_M48-S_ VSS NMOS_OR1 l=1u w=2u
+M5 judge_out1 VCO_OUT VDD VDD PMOS_OR1 l=1u w=2u
+M1 judge_out2 VCO_OUT_prev VDD VDD PMOS_OR1 l=1u w=2u
+M7 judge_out1 judge_out1 Net-_M2-S_ VSS NMOS_OR1 l=1u w=2u
+M6 judge_out1 judge_out2 Net-_M2-S_ VSS NMOS_OR1 l=1u w=2u
+M3 Net-_M2-S_ Net-_M2-S_ VSS VSS NMOS_OR1 l=1u w=2u
+M4 judge_out2 judge_out1 Net-_M2-S_ VSS NMOS_OR1 l=1u w=2u
+M2 judge_out2 judge_out2 Net-_M2-S_ VSS NMOS_OR1 l=1u w=2u
+M11 Net-_M11-D_ Net-_M10-G_ VSS VSS NMOS_OR1 l=1u w=2u
+M13 Net-_M12-D_ judge_out2 Net-_M11-D_ VSS NMOS_OR1 l=1u w=2u
+M9 Net-_M10-G_ judge_out1 Net-_M11-D_ VSS NMOS_OR1 l=1u w=2u
+M12 Net-_M12-D_ judge_out2 Net-_M10-D_ VDD PMOS_OR1 l=1u w=2u
+M15 OUT Net-_M12-D_ VSS VSS NMOS_OR1 l=1u w=2u
+M14 OUT Net-_M12-D_ VDD VDD PMOS_OR1 l=1u w=6u
+M10 Net-_M10-D_ Net-_M10-G_ VDD VDD PMOS_OR1 l=1u w=2u
+M8 Net-_M10-G_ judge_out1 Net-_M10-D_ VDD PMOS_OR1 l=1u w=2u
+
+.ends

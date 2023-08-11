@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OR1Symbols.lib")(type "Legacy")(uri "/home/ryos/Project/MakeLSI/Comparator/0_OR1Symbols.lib")(options "")(descr ""))
+)

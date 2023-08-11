@@ -1,0 +1,24 @@
+*
+
+.subckt Top
++       OUT ; output
++       VDD ; input
++       VSS ; input
+
+
+M11 Net-_M11-D_ Net-_M10-D_ VDD VDD PMOS l=1u w=6u
+M12 Net-_M11-D_ Net-_M10-D_ VSS VSS NMOS l=1u w=2u
+M13 OUT Net-_M11-D_ VDD VDD PMOS l=1u w=6u
+M14 OUT Net-_M11-D_ VSS VSS NMOS l=1u w=2u
+M7 Net-_M10-G_ Net-_M5-D_ VDD VDD PMOS l=1u w=6u
+M8 Net-_M10-G_ Net-_M5-D_ VSS VSS NMOS l=1u w=2u
+M5 Net-_M5-D_ Net-_M3-D_ VDD VDD PMOS l=1u w=6u
+M6 Net-_M5-D_ Net-_M3-D_ VSS VSS NMOS l=1u w=2u
+M9 Net-_M10-D_ Net-_M10-G_ VDD VDD PMOS l=1u w=6u
+M10 Net-_M10-D_ Net-_M10-G_ VSS VSS NMOS l=1u w=2u
+M1 Net-_M1-D_ OUT VDD VDD PMOS l=1u w=6u
+M2 Net-_M1-D_ OUT VSS VSS NMOS l=1u w=2u
+M3 Net-_M3-D_ Net-_M1-D_ VDD VDD PMOS l=1u w=6u
+M4 Net-_M3-D_ Net-_M1-D_ VSS VSS NMOS l=1u w=2u
+
+.ends
