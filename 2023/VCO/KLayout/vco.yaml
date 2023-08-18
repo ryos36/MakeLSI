@@ -1,0 +1,5 @@
+---
+target: vco
+reference: lvs_work/vco_reference.cir.txt
+netlist: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/VCO/KiCad7/VCO-awk.cir"
+schematic: "/home/ryos/Project/MakeLSI/MakeLSI.git/2023/VCO/KiCad7/VCO-awk.cir"
