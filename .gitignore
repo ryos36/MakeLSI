@@ -2,6 +2,7 @@
 *.sch-bak
 top_OR1.gds
 *backups
+*-bak
 lvs_work
 16PTS
 Yamada
