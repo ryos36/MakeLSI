@@ -1445,7 +1445,7 @@
     (property "Sim.Device" "V" (at 81.28 74.93 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Sim.Params" "pwl=\"0  1 50n 1 150n 2 297n 4.8 1000n 4.8 1800n 1 2000n 1\"" (at 85.09 77.3402 0)
+    (property "Sim.Params" "pwl=\"0  1 50n 1 150n 2 297n 1.2 1000n 1.2 1800n 1 2000n 1\"" (at 85.09 77.3402 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Sim.Type" "PWL" (at 81.28 74.93 0)
