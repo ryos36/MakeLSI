@@ -1,0 +1,19 @@
+*** some circuit ***
+* Power source
+vcc 2 0 10V
+
+* Input source
+vs 1 0 dc 0V ac 1V
+
+*other components
+R1 in 1 300ohm
+C1 in 4 19uF
+Rb 4 3 1k
+Lc1 3 2 200uH
+Lc3 4 5 100uH
+Lc2 5 0 100e-6
+cout 5 out 1.9n
+
+* Load
+Rload out 0 3000
+.end

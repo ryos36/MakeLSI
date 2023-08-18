@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OR1Symbols")(type "KiCad")(uri "/home/ryos/Project/MakeLSI/OpenRule1um/KiCad/OR1Symbols.kicad_sym")(options "")(descr ""))
+)
